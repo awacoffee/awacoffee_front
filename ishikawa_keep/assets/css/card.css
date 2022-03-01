@@ -9,11 +9,20 @@
     height: 100%;
   }
 }
-
+.column_tab_wrap li.column_active a {
+  border-bottom: #5d0f0f 1px solid;
+}
+.cards_wrap {
+  display: none;
+}
+.cards_wrap.is_column_active {
+  display: block;
+}
 @media (min-width: 768px) {
   .card_wrap {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 30px;
   }
 }
 
@@ -32,13 +41,8 @@
   }
 }
 
-.column_wrap + .column_wrap {
+.column_wrap {
   margin-top: 20px;
-}
-@media (min-width: 768px) {
-  .column_wrap + .column_wrap {
-    margin: 0 0 0 8%;
-  }
 }
 
 .column_inner {
