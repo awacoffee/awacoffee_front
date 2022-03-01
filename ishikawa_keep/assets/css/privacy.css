@@ -1,4 +1,5 @@
-.under_title.inner {
+/* common(共通なので消し) */
+/* .under_title.inner {
   margin: 0 20px;
   padding: 60px 0;
   border-bottom: 1px solid #7b850b;
@@ -18,37 +19,36 @@
   .under_wrap_title p {
     font-size: 48px;
   }
-}
+} */
 /* section見出し */
-.sec_title {
+.privacy_sec_title {
   padding: 5px;
   font-family: "Shippori Mincho B1";
-  font-size: 15px;
+  font-size: 16px;
   border-left: #7b850b 5px solid;
   text-align: start;
 }
-.sec_title span {
+@media (min-width: 768px) {
+  .privacy_sec_title {
+    font-size: 24px;
+  }
+}
+.privacy_sec_title span {
   margin-left: 16px;
 }
 @media (min-width: 768px) {
-  .sec_title span {
+  .privacy_sec_title span {
     margin-left: 24px;
   }
 }
-@media (min-width: 768px) {
-  .sec_title {
-    padding: 5px;
-    font-family: "Shippori Mincho B1";
-    font-size: 24px;
-    border-left: #7b850b 5px solid;
-  }
-}
-.wrap_text p {
+
+.privacy_text {
+  font-size: 16px;
   text-align: justify;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
-  .wrap_text p {
-    font-size: 24px;
+  .privacy_text {
+    font-size: 20px;
   }
 }
