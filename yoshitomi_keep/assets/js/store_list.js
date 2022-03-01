@@ -46,7 +46,7 @@
 function pcMoreBtn() {
     const show = 3; //初期表示枚数
     const moreNum = 3; //追加カード枚数
-   let cityLength = $(".city_area .pc_stores_cards .stores_card").length
+    let cityLength = $(".city_area .pc_stores_cards .stores_card").length
     let eastLength = $(".east_area .pc_stores_cards .stores_card").length
     let westLength = $(".west_area .pc_stores_cards .stores_card").length
     let southLength = $(".south_area .pc_stores_cards .stores_card").length
@@ -223,20 +223,20 @@ $(".south_area .sp_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")")
 
 // ロード時のwindow幅に応じてmoreボタンの関数を分ける　これをリアルタイムに切り替わるようにしたい
 
-let windowSize = $(window).width();
+// let windowSize = $(window).width();
 
-if (windowSize < 768) {
-    spMoreBtn();
-} else {
-    pcMoreBtn();
-}
-
-
-// $(window).on("load resize", function () {
-//  let window_w = window.innerWidth;
-//  if (window_w > 768) {
+// if (windowSize < 768) {
+//     spMoreBtn();
+// } else {
 //     pcMoreBtn();
-//  } else {
-// spMoreBtn();
-//  }
-// });
+// }
+
+
+$(window).on("load resize", function () {
+ let window_w = window.innerWidth;
+ if (window_w > 768) {
+    pcMoreBtn();
+ } else {
+spMoreBtn();
+ }
+});

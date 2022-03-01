@@ -252,19 +252,32 @@ figure {
 /* ===================== ↓more_btn関係 ===================== */
 
 .more_btn {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
   position: relative;
+  align-items: center;
   margin: 0 0 50px;
-  padding-right: 30px;
   text-align: right;
 }
 .more_btn::after {
   content: "\f054";
   position: absolute;
   top: 10%;
-  right: 0;
+  right: 9px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  z-index: -1;
+}
+.more_btn button {
+  line-height: 16px;
+}
+button {
+  display: inline-block;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-right: 30px;
 }
 
 @media (min-width: 768px) {
