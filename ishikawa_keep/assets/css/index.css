@@ -14,10 +14,10 @@
 /* fuji headerより移植 */
 .mainvisual_wrap {
   /* 確認用の背景色。実際は動画 */
-  background-color: #000;
+
   position: relative;
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   /* z-index: 10; */
 }
