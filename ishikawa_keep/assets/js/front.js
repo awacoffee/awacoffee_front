@@ -61,15 +61,17 @@ $(window).on("load resize", function () {
       var scr = $(this).scrollTop();
       if (scr > footer_h - gnav_h / 2) {
         $(".header_nav_list").hide();
+        // $(".header_nav_list").css("opacity", 0);
       } else if (scr > main_h - gnav_h / 2) {
         $(".header_nav_list").show();
+        // $(".header_nav_list").css("opacity", 1);
         $(".header_nav_list").css({ color: "#542912" });
       } else {
         $(".header_nav_list").css({ color: "#fff" });
       }
     });
   } else {
-    $(".header_nav_list").css("display", "none");
+    // $(".header_nav_list").hide();
   }
 });
 $(window).scroll(function selectbtn_appearance() {

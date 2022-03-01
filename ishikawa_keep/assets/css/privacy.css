@@ -1,0 +1,54 @@
+.under_title.inner {
+  margin: 0 20px;
+  padding: 60px 0;
+  border-bottom: 1px solid #7b850b;
+}
+@media (min-width: 768px) {
+  .under_title.inner {
+    padding: 100px 0;
+  }
+}
+.under_wrap_title p {
+  color: #7b850b;
+  font-family: rollerscript-rough, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .under_wrap_title p {
+    font-size: 48px;
+  }
+}
+/* section見出し */
+.sec_title {
+  padding: 5px;
+  font-family: "Shippori Mincho B1";
+  font-size: 15px;
+  border-left: #7b850b 5px solid;
+  text-align: start;
+}
+.sec_title span {
+  margin-left: 16px;
+}
+@media (min-width: 768px) {
+  .sec_title span {
+    margin-left: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .sec_title {
+    padding: 5px;
+    font-family: "Shippori Mincho B1";
+    font-size: 24px;
+    border-left: #7b850b 5px solid;
+  }
+}
+.wrap_text p {
+  text-align: justify;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .wrap_text p {
+    font-size: 24px;
+  }
+}
