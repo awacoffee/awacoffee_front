@@ -11,7 +11,7 @@
     text-align: left;
 }
 @media (min-width: 768px) {
-    #news .column2_aside .inner {
+    #news_under .column2_aside .inner {
         padding-top: 100px;
     }
 }
