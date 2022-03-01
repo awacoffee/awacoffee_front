@@ -12,9 +12,6 @@
   font-size: 15px;
   border-left: #7b850b 5px solid;
 }
-.store_area {
-  margin-bottom: 50px;
-}
 @media (min-width: 768px) {
   .area_cate {
     padding: 5px 5px 5px 10px;
@@ -22,4 +19,8 @@
     font-size: 24px;
     border-left: #7b850b 5px solid;
   }
+}
+
+.store_area {
+  margin-bottom: 50px;
 }

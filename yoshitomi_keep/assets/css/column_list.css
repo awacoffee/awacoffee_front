@@ -1,0 +1,19 @@
+.text_btns ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-bottom: 50px;
+}
+
+.text_btns li {
+    padding: 0 10px;
+}
+
+.text_btns li + li {
+    border-left: 1px solid #333;
+    padding: 0 10px;
+}
+
+.column_wrap {
+    width: 32%;
+}
