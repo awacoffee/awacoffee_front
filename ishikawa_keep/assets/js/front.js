@@ -60,10 +60,13 @@ $(window).on("load resize", function () {
       var scr = $(this).scrollTop();
       if (scr > footer_h - height) {
         $(".bottom_box").css("opacity", 0);
+        // $(".bottom_box").css("display", "none");
       } else if (scr > selectbtn_h) {
+        // $(".bottom_box").css("display", "block");
         $(".bottom_box").css("opacity", 1);
       } else {
         $(".bottom_box").css("opacity", 0);
+        // $(".bottom_box").css("display", "none");
       }
     });
     $(window).scroll(function gnav_appearance() {
