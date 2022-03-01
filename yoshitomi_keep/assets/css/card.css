@@ -160,7 +160,7 @@ figure {
   max-width: 280px;
 }
 
-.pc_stores_cards .stores_card:nth-child(-n + 3) {
+.pc_stores_cards .stores_card {
   margin-bottom: 3%;
 }
 
