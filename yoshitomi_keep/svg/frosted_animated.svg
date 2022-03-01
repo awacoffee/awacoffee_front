@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="919" height="527" viewBox="0 0 919 527" style="">
+    <defs>
+        <clipPath id="b">
+            <path width="919" height="527" d="M0 0 L919 0 L919 527 L0 527 Z" class="dNMgJvQT_0"></path>
+        </clipPath>
+    </defs>
+    <g id="a" clip-path="url(#b)">
+        <path d="M1323,52h27.961L1323,113.833,1427.835,52,1323,163.111,1486.969,52,1323,217.317,1548.074,52,1323,272.508,1610.165,52,1323,324.743,1675.212,52,1323,382.891,1738.288,52,1323,432.17,1794.465,52,1323,483.419,1852.613,52,1323,535.654,1915.689,52,1346.033,579.019,1970.881,52l-552.9,527.019L2014.246,52,1492.883,579.019,2070.423,52,1574.684,579.019,2135.47,52,1659.443,579.019,2206.43,52,1750.115,579.019,2240.925,96.092l-402.11,482.926,402.11-381.413L1929.487,579.019l311.438-292.712L2028.043,579.019l212.882-186.272s-124.181,190.214-119.253,186.272,119.253-77.86,119.253-77.86l-16.755,77.86" transform="translate(-1323 -52)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="80" class="dNMgJvQT_1"></path>
+    </g>
+    <style data-made-with="vivus-instant">
+        .dNMgJvQT_0 {
+            stroke-dasharray: 2892 2894;
+            stroke-dashoffset: 2893;
+            animation: dNMgJvQT_draw 2000ms linear 0ms forwards;
+        }
+
+        .dNMgJvQT_1 {
+            stroke-dasharray: 19803 19805;
+            stroke-dashoffset: 19804;
+            animation: dNMgJvQT_draw 2000ms linear 0ms forwards;
+        }
+
+        @keyframes dNMgJvQT_draw {
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes dNMgJvQT_fade {
+            0% {
+                stroke-opacity: 1;
+            }
+
+            93.54838709677419% {
+                stroke-opacity: 1;
+            }
+
+            100% {
+                stroke-opacity: 0;
+            }
+        }
+    </style>
+</svg>

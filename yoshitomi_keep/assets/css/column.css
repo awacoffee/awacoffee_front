@@ -5,7 +5,7 @@
 /* ======================================================== */
 
 /* コラム記事タイトル */
-.s_column_title_wrap h1 {
+.s_column_title_wrap h2 {
     font-size: calc(15px + 10 * (100vw - 375px) / 725);
     margin-bottom: 20px;
     text-align: left;
@@ -42,7 +42,6 @@
     border-left: #7b850b 7px solid;
     margin-bottom: 10px;
     line-height: 1.8;
-    text-align: left;
 }
 @media (min-width: 768px) {
     .s_column_subtitle {
@@ -105,7 +104,7 @@
     border: 1px solid#542912;
 }
 /* ④h4のスタイルを設定 */
-.column_page h3 {
+.column_page h4 {
     position: relative;
     margin-left: 10px;
     padding: 0.3em 0.3em 0.3em 0.5em;
@@ -114,37 +113,11 @@
     border-left: #7b850b 7px solid;
     margin-bottom: 10px;
 }
-.column_page h3::after {
+.column_page h4::after {
     position: absolute;
     content: "";
     left: -13px;
     bottom: -6px;
     width: 100%;
     border-bottom: 1px solid #7b850b;
-}
-.column_search {
-    margin-bottom: 40px;
-}
-.search_container {
-    box-sizing: border-box;
-}
-.search_container input[type="text"] {
-    border: 1px solid #542912;
-    padding: 3px 5px;
-    border-radius: 2px;
-    height: 2em;
-    width: 90%;
-    overflow: hidden;
-}
-
-.search_container input[type="submit"] {
-    cursor: pointer;
-    font-family: FontAwesome;
-    font-size: 1.3em;
-    border: none;
-    background: none;
-    color: #542912;
-    outline: none;
-    display: inline-block;
-    vertical-align: middle;
 }
