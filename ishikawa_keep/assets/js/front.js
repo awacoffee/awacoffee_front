@@ -49,37 +49,35 @@ $(".tab_item").on("click", function () {
 // });
 
 //  ============================================================
-
-// scroolイベント詳細(共通)
 let selectbtn_h = $(".bottom_box").outerHeight();
 let gnav_h = $(".header_wrap_box").outerHeight();
-
-// scroolイベント詳細(gnav_appearance)
-$(window).on("scroll resize", function () {
-  var main_h = $(".mainvisual_wrap").outerHeight();
-  console.log(main_h);
-  var footer_h = $("#footer_wrap").offset().top;
-  var scr = $(this).scrollTop();
-  if (scr > footer_h - gnav_h / 2) {
-    $(".header_nav_list").hide();
-  } else if (scr > main_h - gnav_h / 2) {
-    $(".header_nav_list").css("display", "flex");
-    $(".header_nav_list").css({ color: "#542912" });
-  } else {
-    $(".header_nav_list").css({ color: "#fff" });
-  }
-});
-
-// scroolイベント詳細(selectbtn_appearance)
-$(window).on("scroll resize", function () {
-  var height = $(window).height();
-  var footer_h = $("#footer_wrap").offset().top;
-  var scr = $(this).scrollTop();
-  if (scr > footer_h - height) {
-    $(".bottom_box").css("opacity", 0);
-  } else if (scr > selectbtn_h) {
-    $(".bottom_box").css("opacity", 1);
-  } else {
-    $(".bottom_box").css("opacity", 0);
+$(window).on("load resize", function () {
+  $window_w = window.innerWidth;
+  if ($(window).width() > 768) {
+    $(window).scroll(function selectbtn_appearance() {
+      var height = $(window).height();
+      var footer_h = $("#footer_wrap").offset().top;
+      var scr = $(this).scrollTop();
+      if (scr > footer_h - height) {
+        $(".bottom_box").css("opacity", 0);
+      } else if (scr > selectbtn_h) {
+        $(".bottom_box").css("opacity", 1);
+      } else {
+        $(".bottom_box").css("opacity", 0);
+      }
+    });
+    $(window).scroll(function gnav_appearance() {
+      var main_h = $(".mainvisual_wrap").outerHeight();
+      var footer_h = $("#footer_wrap").offset().top;
+      var scr = $(this).scrollTop();
+      if (scr > footer_h - gnav_h / 2) {
+        $(".header_nav_list").hide();
+      } else if (scr > main_h - gnav_h / 2) {
+        $(".header_nav_list").css("display", "flex");
+        $(".header_nav_list").css({ color: "#542912" });
+      } else {
+        $(".header_nav_list").css({ color: "#fff" });
+      }
+    });
   }
 });
