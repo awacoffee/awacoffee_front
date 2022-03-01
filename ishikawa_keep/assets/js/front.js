@@ -48,8 +48,24 @@ $(".tab_item").on("click", function () {
 //     GethashID(hashName);
 // });
 
-//  ============================================================
-let selectbtn_h = $(".bottom_box").outerHeight();
+//  ===section_fadein==========================================================
+$(function () {
+  let section = $("#index_under").find("section");
+  console.log(section);
+  $(section).css({ opacity: "0" });
+  $(window).scroll(function () {
+    $(section).each(function () {
+      var section_h = $(this).offset().top;
+      var scr = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scr > section_h - (windowHeight * 4) / 5) {
+        $(this).animate({ opacity: 1 }, { duration: 2000, easing: "swing" });
+      }
+    });
+  });
+});
+//  ===header_scroll=========================================================
+// $(function () {});
 let gnav_h = $(".header_wrap_box").outerHeight();
 $(window).on("load resize", function () {
   $window_w = window.innerWidth;
@@ -71,21 +87,25 @@ $(window).on("load resize", function () {
       }
     });
   } else {
-    // $(".header_nav_list").hide();
+    $(".header_nav_list").hide();
   }
 });
-$(window).scroll(function selectbtn_appearance() {
-  var height = $(window).height();
-  var footer_h = $("#footer_wrap").offset().top;
-  var scr = $(this).scrollTop();
-  if (scr > footer_h - height) {
-    $(".bottom_box").css("opacity", 0);
-    // $(".bottom_box").css("display", "none");
-  } else if (scr > selectbtn_h) {
-    // $(".bottom_box").css("display", "block");
-    $(".bottom_box").css("opacity", 1);
-  } else {
-    $(".bottom_box").css("opacity", 0);
-    // $(".bottom_box").css("display", "none");
-  }
+//  ===selectbtn_scroll=========================================================
+$(function () {
+  let selectbtn_h = $(".bottom_box").outerHeight();
+  $(window).on("load scroll", function () {
+    var height = $(window).height();
+    var footer_h = $("#footer_wrap").offset().top;
+    var scr = $(this).scrollTop();
+    if (scr > footer_h - height) {
+      $(".bottom_box").css("opacity", 0);
+      $(".bottom_box").css("pointer-events", "none");
+    } else if (scr > selectbtn_h) {
+      $(".bottom_box").css("opacity", 1);
+      $(".bottom_box").css("pointer-events", "auto");
+    } else {
+      $(".bottom_box").css("opacity", 0);
+      $(".bottom_box").css("pointer-events", "none");
+    }
+  });
 });
