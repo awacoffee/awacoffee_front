@@ -53,7 +53,6 @@ function pcMoreBtn() {
 
     // 徳島市の店舗カードmoreボタン
     if (cityLength <= show) {
-        console.log(eastLength);
         $(".city_area .more_btn").fadeOut();
     } else {
 $(".city_area .pc_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
@@ -74,7 +73,6 @@ $(".city_area .pc_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").
 
         // 東部の店舗カードmoreボタン
     if (eastLength <= show) {
-        console.log(eastLength);
         $(".east_area .more_btn").fadeOut();
     } else {
 $(".east_area .pc_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
@@ -94,7 +92,6 @@ $(".east_area .pc_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").
     };
         // 西部の店舗カードmoreボタン
     if (westLength <= show) {
-        console.log(westLength);
         $(".west_area .more_btn").fadeOut();
     } else {
 $(".west_area .pc_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
@@ -112,21 +109,19 @@ $(".west_area .pc_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").
         }
     });
     };
-
         // 南部の店舗カードmoreボタン
     if (southLength <= show) {
-        console.log(southLength);
         $(".south_area .more_btn").fadeOut();
     } else {
 $(".south_area .pc_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
     $(".south_area .more_btn").on("click", function () {
         $(this)
-            .prev(".south_area .store_lists")
-            .find(".south_area .stores_card.is-hidden")
+            .prev(".store_lists")
+            .find(".stores_card.is-hidden")
             .slice(0, moreNum)
             .removeClass("is-hidden");
         if (
-            $(this).prev(".south_area .store_lists").find(".south_area .stores_card.is-hidden")
+            $(this).prev(".store_lists").find(".stores_card.is-hidden")
                 .length == 0
         ) {
             $(this).fadeOut();
@@ -147,7 +142,6 @@ function spMoreBtn() {
 
    // 徳島市の店舗カードmoreボタン
     if (cityLength <= show) {
-        console.log(eastLength);
         $(".city_area .more_btn").fadeOut();
     } else {
 $(".city_area .sp_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
@@ -168,7 +162,6 @@ $(".city_area .sp_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").
 
         // 東部の店舗カードmoreボタン
     if (eastLength <= show) {
-        console.log(eastLength);
         $(".east_area .more_btn").fadeOut();
     } else {
 $(".east_area .sp_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
@@ -188,7 +181,6 @@ $(".east_area .sp_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").
     };
         // 西部の店舗カードmoreボタン
     if (westLength <= show) {
-        console.log(westLength);
         $(".west_area .more_btn").fadeOut();
     } else {
 $(".west_area .sp_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
@@ -209,7 +201,6 @@ $(".west_area .sp_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").
 
         // 南部の店舗カードmoreボタン
     if (southLength <= show) {
-        console.log(southLength);
         $(".south_area .more_btn").fadeOut();
     } else {
 $(".south_area .sp_stores_cards .stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
@@ -239,3 +230,13 @@ if (windowSize < 768) {
 } else {
     pcMoreBtn();
 }
+
+
+// $(window).on("load resize", function () {
+//  let window_w = window.innerWidth;
+//  if (window_w > 768) {
+//     pcMoreBtn();
+//  } else {
+// spMoreBtn();
+//  }
+// });
