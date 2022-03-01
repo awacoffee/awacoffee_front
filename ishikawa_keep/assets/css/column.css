@@ -91,6 +91,7 @@
     padding-top: 75%;
     position: relative;
     margin-bottom: 5px;
+    border-radius: 2px;
 }
 .s_column_img img {
     width: 100%;
