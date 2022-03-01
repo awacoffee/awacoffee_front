@@ -67,6 +67,7 @@ function pcMoreBtn() {
 function spMoreBtn() {
     const show = 4; //初期表示枚数
     const moreNum = 4; //追加カード枚数
+
     $(".stores_card:nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
     $(".more_btn").on("click", function () {
         $(this)
