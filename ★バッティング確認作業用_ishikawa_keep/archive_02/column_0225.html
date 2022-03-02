@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ▼設定するのであれば入れる▼ -->
+    <meta name="keywords" content="" />
+    <!-- ▼ディスクリプション→コンテンツ班からもらう▼ -->
+    <meta name="description" content="" />
+
+    <!-- ▼フォント:Rollerscript Rough▼ -->
+    <!-- CSSでの指定 /CSSに移したら消す-->
+    <!-- font-family: rollerscript-rough, sans-serif;
+            font-weight: 400;
+            font-style: normal; -->
+    <link rel="stylesheet" href="https://use.typekit.net/twf1hjd.css" />
+
+    <!-- ▼フォント:Shippori Mincho B1(Regular,Medium,Bold) -->
+    <!-- ▼フォント:Noto Sans Japanese(Regular,Medium,Bold) -->
+    <!-- CSSでの指定 /CSSに移したら消す-->
+    <!-- font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Shippori Mincho B1', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ▼FontAwesome▼ -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ▼リセットCSS▼ -->
+    <link href="assets/css/reset.css" rel="stylesheet" media="all" />
+    <!-- ▼共通スタイル▼ -->
+    <link href="assets/css/common.css" rel="stylesheet" media="all" />
+    <!-- ▼店舗個別ページのCSS /ファイル名記載する▼ -->
+    <link href="assets/css/s_column.css" rel="stylesheet" media="all" />
+    <link rel="stylesheet" href="assets/css/store.css" />
+
+    <title>店舗個別ページ</title>
+  </head>
+  <body>
+    <!-- ▼下層ヘッダー▼ -->
+    <header>
+      <div class="header_wrap under">
+        <div class="header_inner">
+          <div class="header_wrap_box">
+            <!-- ▼カップicon▼ -->
+            <a href="" class="header_wrap_box_icon">
+              <img
+                src="./assets/img/header-icon_white.png"
+                alt="Awa Our Coffee Hourのアイコン"
+              />
+            </a>
+            <nav>
+              <ul class="header_nav_list">
+                <li>
+                  <a href="" class="header_nav_item">条件検索</a>
+                </li>
+                <li>
+                  <a href="" class="header_nav_item">コラム</a>
+                </li>
+                <li>
+                  <a href="" class="header_nav_item">コーヒー入門知識</a>
+                </li>
+                <li>
+                  <a href="" class="header_nav_item">マイページ</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- ▼ハンバーガーメニュー▼ -->
+            <div class="header_wrap_box_nav">
+              <span class="header_wrap_box_nav_line"></span>
+              <span class="header_wrap_box_nav_line"></span>
+              <span class="header_wrap_box_nav_line"></span>
+            </div>
+          </div>
+          <!-- header_wrap_box -->
+        </div>
+      </div>
+      <!-- /.header_wrap -->
+
+      <!-- ▼ドロワー▼ -->
+      <div class="drower">
+        <div class="wrap">
+          <div class="inner">
+            <nav class="drower_nav">
+              <div class="drower_nav_close"></div>
+              <div class="drower_nav_logo">
+                <a href=""
+                  ><img
+                    src="./assets/img/logo_aoch.png"
+                    alt="Awa Our Coffee Hour"
+                /></a>
+              </div>
+              <ul class="drower_nav_box">
+                <li>
+                  <a href="" class="drower_nav_box_item">店で飲みたい</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_box_item">豆を買いたい</a>
+                </li>
+              </ul>
+              <ul class="drower_nav_list">
+                <li>
+                  <a href="" class="drower_nav_item">条件検索</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item">コラム</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item">コーヒー入門知識</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item">マイページ</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item">お問い合わせ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ▼タイトルエリア▼ -->
+      <div class="wrap mainvisual_wrap">
+        <div class="under_title inner">
+          <div class="under_wrap_title">
+            <p>Column</p>
+            <h1>コラム</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- 全体で囲む or flex -->
+      <section class="column2_flex wrap">
+        <!-- コラム記事本文-->
+        <section class="column2_article">
+          <div class="wrap">
+            <div class="inner">
+              <!-- コラム記事詳細タイトル -->
+              <section class="s_column_title_wrap">
+                <h1 class="column_title">
+                  コーヒーショップでの過ごし方①おひとり様編
+                </h1>
+                <ul class="tags">
+                  <li class="tag">
+                    <a href="">自家焙煎</a>
+                  </li>
+                  <li class="tag">
+                    <a href="">自家焙煎</a>
+                  </li>
+                  <li class="tag">
+                    <a href="">自家焙煎</a>
+                  </li>
+                  <li class="tag">
+                    <a href="">自家焙煎</a>
+                  </li>
+                </ul>
+                <p class="s_column_title_text">
+                  ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
+                </p>
+              </section>
+
+              <article class="s_column_card">
+                <h3 class="s_column_subtitle">1. 読書をする</h3>
+                <figure class="s_column_img">
+                  <img src="assets/img/store-img01.jpg" alt="" />
+                </figure>
+                <p class="s_column_text">
+                  ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
+                </p>
+              </article>
+              <article class="s_column_card">
+                <h3 class="s_column_subtitle">1. 読書をする</h3>
+                <figure class="s_column_img">
+                  <img src="assets/img/store-img01.jpg" alt="" />
+                </figure>
+                <p class="s_column_text">
+                  ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
+                </p>
+              </article>
+              <article class="s_column_card">
+                <h3 class="s_column_subtitle">1. 読書をする</h3>
+                <figure class="s_column_img">
+                  <img src="assets/img/store-img01.jpg" alt="" />
+                </figure>
+                <p class="s_column_text">
+                  ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
+                </p>
+              </article>
+              <!-- 最後のカードだけまとめ記事 -->
+              <article class="s_column_card">
+                <h3 class="s_column_subtitle">まとめ</h3>
+                <p class="s_column_text">
+                  ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- ▼レコメンド▼ -->
+        <section class="recommend">
+          <div class="wrap">
+            <div class="inner">
+              <h2 class="recommend_title">あなたへのおすすめ</h2>
+              <ul class="recommend_store_list">
+                <div class="stores_wrap_card2">
+                  <div class="stores_wrap_card_img2"></div>
+                  <div class="store_card_inner2">
+                    <div class="stores_wrap_card_name2">とよとみ珈琲</div>
+                    <div class="stores_wrap_card_catch2">
+                      自家焙煎にこだわった至福の一杯
+                    </div>
+                    <div class="stores_wrap_card_tags2">
+                      <div class="stores_wrap_card_tag2">#勉強</div>
+                      <div class="stores_wrap_card_tag2">#デート</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stores_wrap_card2">
+                  <div class="stores_wrap_card_img2"></div>
+                  <div class="store_card_inner2">
+                    <div class="stores_wrap_card_name2">とよとみ珈琲</div>
+                    <div class="stores_wrap_card_catch2">
+                      自家焙煎にこだわった至福の一杯
+                    </div>
+                    <div class="stores_wrap_card_tags2">
+                      <div class="stores_wrap_card_tag2">#勉強</div>
+                      <div class="stores_wrap_card_tag2">#デート</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stores_wrap_card2">
+                  <div class="stores_wrap_card_img2"></div>
+                  <div class="store_card_inner2">
+                    <div class="stores_wrap_card_name2">とよとみ珈琲</div>
+                    <div class="stores_wrap_card_catch2">
+                      自家焙煎にこだわった至福の一杯
+                    </div>
+                    <div class="stores_wrap_card_tags2">
+                      <div class="stores_wrap_card_tag2">#勉強</div>
+                      <div class="stores_wrap_card_tag2">#デート</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stores_wrap_card2">
+                  <div class="stores_wrap_card_img2"></div>
+                  <div class="store_card_inner2">
+                    <div class="stores_wrap_card_name2">とよとみ珈琲</div>
+                    <div class="stores_wrap_card_catch2">
+                      自家焙煎にこだわった至福の一杯
+                    </div>
+                    <div class="stores_wrap_card_tags2">
+                      <div class="stores_wrap_card_tag2">#勉強</div>
+                      <div class="stores_wrap_card_tag2">#デート</div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+              <!-- recommend_store_list -->
+            </div>
+            <!-- viewport -->
+          </div>
+          <!-- recommend_store_wrap -->
+        </section>
+        <!-- recommend -->
+
+        <!-- ▼サイドバー▼ -->
+        <aside class="column2_aside">
+          <div class="wrap">
+            <div class="inner">
+              <div class="side_scrool">
+                <ul class="side_search">
+                  <li class="side_title">
+                    <span>コラムカテゴリ一覧</span>
+                    <ul class="side_lists">
+                      <li class="list">
+                        <a href="">入門知識</a>
+                      </li>
+                      <li class="list">
+                        <a href="">ブログ</a>
+                      </li>
+                      <li class="list">
+                        <a href="">お知らせ</a>
+                      </li>
+                      <li class="list">
+                        <a href="">特集</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="side_title">
+                    <span>新着情報</span>
+                    <ul class="side_lists">
+                      <li class="list">
+                        <a href="">おしらせ</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- side_column_wrap -->
+            </div>
+            <!-- viewport -->
+          </div>
+          <!-- side_wrap -->
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <div id="footer_wrap" class="wrap">
+        <div class="inner">
+          <!-- ▼フッター▼ -->
+          <div class="footer_flex">
+            <div class="footer_logo">
+              <img
+                src="./assets/img/logo_aoch.png"
+                alt="Awa Our Coffee Hourのロゴ"
+              />
+            </div>
+            <nav class="footer_nav">
+              <ul class="footer_nav_list">
+                <li class="footer_nav_item">
+                  <a href="">お店で飲みたい</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">豆を買いたい</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">条件検索</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">コラム</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">マイページ</a>
+                </li>
+              </ul>
+              <ul class="footer_nav_list">
+                <li class="footer_nav_item">
+                  <a href="">お問い合わせ</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">このサイトについて</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">プライバシーポリシー</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- footer_flex -->
+
+          <p class="footer_wrap_copyright">
+            <small>Copyright &copy; 2022 動 All Rights Reserved.</small>
+          </p>
+        </div>
+        <!-- viewport -->
+      </div>
+      <!-- footer_wrap -->
+    </footer>
+
+    <!-- ▼Javascript▼ -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/front.js"></script>
+    <script src="./assets/js/store.js"></script>
+  </body>
+</html>

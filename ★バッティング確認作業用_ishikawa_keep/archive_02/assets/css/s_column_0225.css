@@ -1,0 +1,67 @@
+/* コラム記事タイトル */
+.s_column_title_wrap h1 {
+  font-size: calc(15px + 17 * (100vw - 375px) / 725);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.s_column_title_wrap .tags {
+  margin-bottom: 42px;
+}
+.s_column_title_wrap .tags .tag {
+  display: inline-block;
+}
+.s_column_title_wrap .tags .tag:not(:last-child) {
+  margin-right: 5px;
+}
+
+.s_column_title_wrap .tag::before {
+  content: "#";
+}
+.s_column_title_text {
+  margin-bottom: 60px;
+}
+
+/* コラム本文 */
+.s_column_cards {
+  max-width: 690px;
+  margin: 0 20px;
+}
+/* 左よこ縦棒 */
+.s_column_subtitle {
+  padding: 5px;
+  font-family: "Shippori Mincho B1";
+  font-size: 15px;
+  border-left: #7b850b 5px solid;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .s_column_subtitle {
+    font-size: 24px;
+  }
+}
+.s_column_card {
+  margin-bottom: 40px;
+}
+
+.s_column_card:nth-last-child(2) {
+  margin-bottom: 100px;
+}
+.s_column_img {
+  width: 100%;
+  padding-top: 75%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.s_column_img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .s_column_cards {
+    margin-bottom: 200px;
+  }
+}
