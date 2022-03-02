@@ -44,15 +44,3 @@
     font-size: 20px;
   }
 }
-.privacy_wrap_des {
-  width: 100%;
-  max-width: 900px;
-  margin-bottom: 0;
-}
-
-.privacy_wrap_text {
-  width: 100%;
-  max-width: 900px;
-  /* 変えるなら */
-  /* margin-bottom: 0; */
-}

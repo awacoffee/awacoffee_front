@@ -130,9 +130,8 @@
     margin: 0 0 10px 0;
   }
 }
-
 /* yoshitomi作成分 */
-/* ↓カードにホバーしたときにimgが拡大される */
+/* =========== ↓カードにホバーしたときにimgが拡大される =========== */
 
 .stores_card:hover .card_img {
   transform: scale(1.05);
@@ -214,8 +213,8 @@ figure {
   max-width: 280px;
 }
 
-.pc_stores_cards .stores_card {
-  margin-bottom: 20px;
+.pc_stores_cards .stores_card:nth-child(-n + 3) {
+  margin-bottom: 3%;
 }
 
 .pc_stores_cards .front_card {
@@ -306,29 +305,19 @@ figure {
 /* ===================== ↓more_btn関係 ===================== */
 
 .more_btn {
-  display: flex;
-  justify-content: flex-end;
+  display: block;
   position: relative;
   margin: 0 0 50px;
+  padding-right: 30px;
   text-align: right;
 }
 .more_btn::after {
   content: "\f054";
   position: absolute;
   top: 10%;
-  right: 9px;
+  right: 0;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  z-index: -1;
-}
-
-.more_btn button {
-  display: inline-block;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding-right: 30px;
 }
 
 @media (min-width: 768px) {

@@ -51,6 +51,14 @@
     display: flex;
     justify-content: center;
 }
+.search_container input[type="text"] {
+    border: 1px solid #542912;
+    padding: 3px 5px;
+    border-radius: 2px;
+    height: 2em;
+    max-width: 100%;
+    overflow: hidden;
+}
 
 .search_container input[type="submit"] {
     margin-left: 10px;
@@ -60,6 +68,15 @@
     font-size: 1.3em;
     color: #542912;
     display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .search_container input[type="text"] {
+        flex-basis: 70%;
+    }
+    .search_container input[type="submit"] {
+        flex-basis: 20%;
+    }
 }
 
 /* ▼コラムカード▼ */

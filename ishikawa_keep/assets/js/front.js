@@ -65,31 +65,34 @@ $(function () {
   });
 });
 //  ===header_scroll=========================================================
-// $(function () {});
-let gnav_h = $(".header_wrap_box").outerHeight();
-$(window).on("load resize", function () {
-  $window_w = window.innerWidth;
-  if ($(window).width() > 768) {
-    $(".header_nav_list").css("display", "flex");
-    $(window).scroll(function gnav_appearance() {
-      var main_h = $(".mainvisual_wrap").outerHeight();
-      var footer_h = $("#footer_wrap").offset().top;
-      var scr = $(this).scrollTop();
-      if (scr > footer_h - gnav_h / 2) {
-        $(".header_nav_list").hide();
-        // $(".header_nav_list").css("opacity", 0);
-      } else if (scr > main_h - gnav_h / 2) {
-        $(".header_nav_list").show();
-        // $(".header_nav_list").css("opacity", 1);
-        $(".header_nav_list").css({ color: "#542912" });
-      } else {
-        $(".header_nav_list").css({ color: "#fff" });
-      }
-    });
-  } else {
-    $(".header_nav_list").hide();
-  }
+$(function () {
+  let gnav_h = $(".header_wrap_box").outerHeight();
+  $(window).on("load resize", function () {
+    $window_w = window.innerWidth;
+    console.log($window_w);
+    if ($window_w > 768) {
+      $(".header_nav_list").css("display", "flex");
+      $(window).scroll(function gnav_appearance() {
+        var main_h = $(".mainvisual_wrap").outerHeight();
+        var footer_h = $("#footer_wrap").offset().top;
+        var scr = $(this).scrollTop();
+        if (scr > footer_h - gnav_h / 2) {
+          $(".header_nav_list").hide();
+          // $(".header_nav_list").css("opacity", 0);
+        } else if (scr > main_h - gnav_h / 2) {
+          $(".header_nav_list").show();
+          // $(".header_nav_list").css("opacity", 1);
+          $(".header_nav_list").css({ color: "#542912" });
+        } else {
+          $(".header_nav_list").css({ color: "#fff" });
+        }
+      });
+    } else {
+      $(".header_nav_list").hide();
+    }
+  });
 });
+
 //  ===selectbtn_scroll=========================================================
 $(function () {
   let selectbtn_h = $(".bottom_box").outerHeight();
