@@ -27,10 +27,14 @@
 }
 .store_tags {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgba(123, 133, 11, 0.3);
 }
 .store_tag {
-    margin-right: 0.5em;
+    margin-right: 1em;
 }
 .store_tag::before {
     content: "#";
@@ -50,9 +54,23 @@
     display: inline-block;
     padding: 8px 14px;
     background-color: #041526;
+    border: 1px solid #041526;
     border-radius: 2px;
     color: #fff;
+    transition: all 0.3s;
 }
+.fa-circle-chevron-down {
+    margin-right: 5px;
+}
+/* PCの時はhoverで反転 */
+@media (min-width: 768px) {
+    .store_info_btn:hover {
+        background-color: #fff;
+        border: 1px solid currentColor;
+        color: #041526;
+    }
+}
+
 .store_fun {
     display: flex;
     align-items: flex-end;
@@ -72,6 +90,7 @@
 .store_mark {
     width: 30px;
     height: 30px;
+    margin-right: 10px;
     background-image: url(../img/Icon\ ionic-ios-bookmark.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -305,7 +324,20 @@ dd a:hover {
 
 /* ▼インタビュー記事ある場合▼ */
 /* ▼コラムカード▼ */
-
+.side_column_title {
+    position: relative;
+}
+.side_column_title::before {
+    position: absolute;
+    display: block;
+    content: "Pick Up!";
+    top: -15px;
+    left: 0;
+    font-family: rollerscript-rough, sans-serif;
+    font-size: 30px;
+    transform: rotate(-13deg);
+    color: rgba(123, 133, 11, 0.6);
+}
 @media (min-width: 768px) {
     .side_column {
         /* padding: 20px; */
@@ -452,6 +484,36 @@ dd a:hover {
     .categories_wrap {
         margin: 0 0 10px 0;
     }
+}
+
+/* 条件検索へ行くボタン */
+.store_page_btn_wrap {
+    margin: 40px 0;
+    max-width: 220px;
+}
+.store_page_btn_link {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background-color: #041526;
+    border: 1px solid #041526;
+    border-radius: 3px;
+    text-align: center;
+    font-family: "Shippori Mincho B1", serif;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.35);
+}
+@media (min-width: 768px) {
+    .store_page_btn_link:hover {
+        background-color: #fff;
+        border: 1px solid currentColor;
+        color: #041526;
+    }
+}
+.fa-magnifying-glass {
+    margin-right: 5px;
 }
 /* =========== ↓カードにホバーしたときにimgが拡大される =========== */
 
