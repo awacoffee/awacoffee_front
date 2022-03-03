@@ -5,189 +5,209 @@
 /* ======================================================== */
 /* 新着情報 */
 .column2_article {
-  flex-basis: 70%;
+    flex-basis: 70%;
 }
 .column2_article .wrap_text {
-  text-align: left;
+    text-align: left;
 }
 @media (min-width: 768px) {
-  #news_under .column2_aside .inner {
-    padding-top: 100px;
-  }
+    #news_under .column2_aside .inner {
+        padding-top: 100px;
+    }
 }
 
 .news_wrap_card {
-  margin-bottom: 20px;
-  padding: 10px;
-  border-bottom: 1px solid #7b850b;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #7b850b;
 }
 .news_wrap_card:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 .news_wrap_card_icon {
-  flex-basis: 42px;
-  text-align: center;
+    flex-basis: 42px;
+    text-align: center;
 }
 .news_wrap_card_inner {
-  display: block;
-  margin-left: 1%;
-  padding: 0.5em;
+    display: block;
+    margin-left: 1%;
+    padding: 0.5em;
 }
 .news_card_meta {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
 }
 .news_date {
-  display: block;
+    display: block;
 }
 .category_update {
-  display: block;
-  margin-left: 10px;
-  padding: 0.3em 0.5em;
-  background-color: #542912;
-  color: #fff;
+    display: block;
+    margin-left: 10px;
+    padding: 0.3em 0.5em;
+    background-color: #542912;
+    color: #fff;
 }
 .category_news {
-  display: block;
-  margin-left: 10px;
-  padding: 0.3em 0.5em;
-  background-color: #fff;
-  border: 1px solid #542912;
-  color: #542912;
+    display: block;
+    margin-left: 10px;
+    padding: 0.3em 0.5em;
+    background-color: #fff;
+    border: 1px solid #542912;
+    color: #542912;
 }
 .news_text {
-  display: block;
-  margin-bottom: 6px;
+    display: block;
+    margin-bottom: 6px;
 }
 .news_title {
-  margin-bottom: 6px;
+    margin-bottom: 6px;
 }
 .news_desc {
-  line-height: 1.5em;
+    line-height: 1.5em;
 }
 @media (min-width: 768px) {
-  .news_wrap_cards {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+    .news_wrap_cards {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 
 /* ▼サイドバー▼ */
 .column2_aside {
-  font-family: "Shippori Mincho B1", serif;
+    font-family: "Shippori Mincho B1", serif;
 }
 .column2_aside .wrap {
-  height: 100%;
+    height: 100%;
 }
 .column2_aside .inner {
-  height: 100%;
+    height: 100%;
 }
 .side_title {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 /* h2 */
 .side_title {
-  display: block;
-  margin-bottom: 10px;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  font-size: 18px;
-  text-align: left;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 18px;
+    text-align: left;
 }
 @media (min-width: 768px) {
-  .side_title {
-    font-size: 20px;
-  }
+    .side_title {
+        font-size: 20px;
+    }
 }
 .side_lists {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .side_lists .list a {
-  display: block;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #542912;
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #542912;
 }
 .side_lists .list {
-  position: relative;
-  font-size: 16px;
+    position: relative;
+    font-size: 16px;
 }
 .side_lists .list::after {
-  content: "\f054";
-  position: absolute;
-  top: 35%;
-  right: 1em;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  transition: all 0.5s;
+    content: "\f054";
+    position: absolute;
+    top: 35%;
+    right: 1em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transition: all 0.5s;
 }
 .side_lists .list:hover:after {
-  transform: translateX(1em);
+    transform: translateX(1em);
 }
 /* サイドバー横に出現、順番入れ替え */
 @media (min-width: 768px) {
-  .column2_flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .column2_article {
-    order: 1;
-    flex-basis: 65%;
-  }
-  .column2_aside {
-    order: 2;
-    flex-basis: 35%;
-  }
-  .recommend {
-    order: 3;
-    flex-basis: 100%;
-  }
-  /* アクセスMAPの下部と揃った状態でsticky終わるよう調整 */
-  .column2_aside .inner {
-    padding: 200px 25px 100px;
-  }
+    .column2_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .column2_article {
+        order: 1;
+        flex-basis: 65%;
+    }
+    .column2_aside {
+        order: 2;
+        flex-basis: 35%;
+    }
+    .recommend {
+        order: 3;
+        flex-basis: 100%;
+    }
+    /* アクセスMAPの下部と揃った状態でsticky終わるよう調整 */
+    .column2_aside .inner {
+        padding: 200px 25px 100px;
+    }
 }
 /* サイドバー追従 */
 @media (min-width: 768px) {
-  /* 名前変更 */
-  aside {
-    display: block;
-  }
-  .side_scrool {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 100px;
-  }
+    /* 名前変更 */
+    aside {
+        display: block;
+    }
+    .side_scrool {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 100px;
+    }
 }
 
-/* ▼moreボタン▼ */
-/* .more_btn {
-    display: block;
+/* ===================== ↓more_btn関係 ===================== */
+
+.more_btn {
+    display: flex;
+    justify-content: flex-end;
     position: relative;
     margin: 0 0 50px;
-    padding-right: 30px;
     text-align: right;
 }
 .more_btn::after {
     content: "\f054";
     position: absolute;
     top: 10%;
-    right: 0;
+    right: 9px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    z-index: -1;
 }
+
+.more_btn button {
+    display: inline-block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-right: 30px;
+}
+
 @media (min-width: 768px) {
     .more_btn {
         margin: 60px 0 0;
         text-align: right;
     }
-} */
+    .sp_more_btn {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .pc_more_btn {
+        display: none;
+    }
+}
 
 /* moreボタンでさらに表示 */
-/* .news_wrap_cards li {
+.news_wrap_cards li {
     opacity: 1;
     transition: all 0.4s ease 0s;
     overflow: hidden;
@@ -198,61 +218,4 @@
     height: 0;
     margin: 0 10px;
     padding: 0;
-} */
-
-/* ===================== ↓more_btn関係 ===================== */
-
-.more_btn {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  margin: 0 0 50px;
-  text-align: right;
-}
-.more_btn::after {
-  content: "\f054";
-  position: absolute;
-  top: 10%;
-  right: 9px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  z-index: -1;
-}
-
-.more_btn button {
-  display: inline-block;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding-right: 30px;
-}
-
-@media (min-width: 768px) {
-  .more_btn {
-    margin: 60px 0 0;
-    text-align: right;
-  }
-  .sp_more_btn {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .pc_more_btn {
-    display: none;
-  }
-}
-
-/* moreボタンでさらに表示 */
-.store_lists article {
-  opacity: 1;
-  transition: all 0.4s ease 0s;
-  overflow: hidden;
-}
-.store_lists article.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
-  margin: 0 10px;
-  padding: 0;
 }
