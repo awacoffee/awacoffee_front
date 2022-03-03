@@ -1,432 +1,453 @@
 .text_btns ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) {
-    .text_btns ul {
-        justify-content: right;
-    }
+  .text_btns ul {
+    flex-grow: 1;
+    /* justify-content: right; */
+    justify-content: left;
+  }
 }
 .text_btns li {
-    padding: 0 10px;
+  padding: 0 20px;
 }
 .text_btns li h2 {
-    font-family: "Shippori Mincho B1", serif;
-    font-size: 16px;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 16px;
 }
-@media (min-width: 768px) {
-    .text_btns li h2 {
-        font-size: 20px;
-    }
+
+.column_item_btn::after {
+  display: block;
+  position: relative;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
-.text_btns li + li {
-    border-left: 1px solid #333;
-    padding: 0 10px;
+.column_item_btn:hover:after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (min-width: 768px) {
-    .text_btns {
-        display: flex;
-        justify-content: center;
-    }
-    .column_tab_wrap {
-        width: 50%;
-        transform: translateX(25%);
-    }
+  .text_btns li h2 {
+    font-size: 20px;
+  }
+}
+.text_btns li + li {
+  border-left: 1px solid #333;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .text_btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column_tab_wrap {
+    width: 50%;
+    /* transform: translateX(25%); */
+  }
 }
 /* 検索BOX */
 .column_search {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
-    .column_search {
-        width: 50%;
-        display: flex;
-        justify-content: end;
-    }
+  .column_search {
+    display: flex;
+    justify-content: end;
+  }
 }
 .search_container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .search_container input[type="text"] {
-    border: 1px solid #542912;
-    padding: 3px 5px;
-    border-radius: 2px;
-    height: 2em;
-    max-width: 100%;
-    overflow: hidden;
+  border: 1px solid #542912;
+  padding: 3px 5px;
+  border-radius: 2px;
+  height: 2em;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .search_container input[type="submit"] {
-    margin-left: 10px;
-    /* flex-basis: 20%; */
-    cursor: pointer;
-    font-family: FontAwesome;
-    font-size: 1.3em;
-    color: #542912;
-    display: inline-block;
+  margin-left: 10px;
+  /* flex-basis: 20%; */
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  color: #542912;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
-    .search_container input[type="text"] {
-        flex-basis: 70%;
-    }
-    .search_container input[type="submit"] {
-        flex-basis: 20%;
-    }
+  .search_container input[type="text"] {
+    flex-basis: 70%;
+  }
+  .search_container input[type="submit"] {
+    flex-basis: 20%;
+  }
 }
 
 /* ▼コラムカード▼ */
 .column_img_wrap img {
-    width: 150px;
-    height: 112.5px;
-    object-fit: contain;
+  width: 150px;
+  height: 112.5px;
+  object-fit: contain;
 }
 @media (min-width: 768px) {
-    .column_img_wrap img {
-        width: 100%;
-        height: 100%;
-    }
+  .column_img_wrap img {
+    width: 100%;
+    height: 100%;
+  }
 }
-.column_tab_wrap h2.column_active a {
+/* .column_tab_wrap h2.column_active a {
     border-bottom: #5d0f0f 1px solid;
-}
-.cards_wrap {
+} */
+/* .cards_wrap {
     display: none;
-}
-.cards_wrap.is_column_active {
+} */
+/* .cards_wrap.is_column_active {
     display: block;
-}
+} */
 @media (min-width: 768px) {
-    .card_wrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 40px 30px;
-    }
+  .card_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 30px;
+  }
 }
 
 .column_wrap {
-    margin: 0 auto;
-    border-radius: 3px;
-    transition: 0.3s ease-in-out;
+  margin: 0 auto;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
 }
 
 .column_wrap:hover {
-    box-shadow: 0 0 15px #542912;
+  box-shadow: 0 0 15px #542912;
 }
 @media (min-width: 768px) {
-    .column_wrap {
-        box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
-    }
+  .column_wrap {
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
+  }
 }
 
 .column_wrap {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .column_inner {
-    display: flex;
+  display: flex;
 }
 @media (min-width: 768px) {
-    .column_inner {
-        display: block;
-    }
+  .column_inner {
+    display: block;
+  }
 }
 
 .column_img_wrap {
-    min-width: 100px;
-    overflow: hidden;
-    border-radius: 3px;
+  min-width: 100px;
+  overflow: hidden;
+  border-radius: 3px;
 }
 @media (min-width: 768px) {
-    .column_img_wrap {
-        width: 100%;
-    }
+  .column_img_wrap {
+    width: 100%;
+  }
 }
 
 .column_meta {
-    flex-grow: 2;
-    margin-left: 10px;
-    border-bottom: 1px solid #7b850b;
+  flex-grow: 2;
+  margin-left: 10px;
+  border-bottom: 1px solid #7b850b;
 }
 @media (min-width: 768px) {
-    .column_meta {
-        margin-left: 0;
-        padding: 10px 18px 16px;
-        border-bottom: none;
-    }
+  .column_meta {
+    margin-left: 0;
+    padding: 10px 18px 16px;
+    border-bottom: none;
+  }
 }
 
 .column_meta h3 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
-    .column_meta h3 {
-        font-size: 20px;
-        border-bottom: 1px solid #7b850b;
-        padding-bottom: 15px;
-        margin-bottom: 8px;
-    }
+  .column_meta h3 {
+    font-size: 20px;
+    border-bottom: 1px solid #7b850b;
+    padding-bottom: 15px;
+    margin-bottom: 8px;
+  }
 }
 
 .column_text {
-    display: none;
-    margin-bottom: 10px;
-    font-size: 14px;
+  display: none;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 @media (min-width: 768px) {
-    .column_text {
-        display: block;
-    }
+  .column_text {
+    display: block;
+  }
 }
 
 .categories {
-    display: inline-block;
+  display: inline-block;
 
-    padding: 0.2em 0.5em;
-    font-size: 12px;
-    background-color: #f6f4ef;
+  padding: 0.2em 0.5em;
+  font-size: 12px;
+  background-color: #f6f4ef;
 }
 @media (min-width: 768px) {
-    .categories {
-        font-size: 14px;
-    }
+  .categories {
+    font-size: 14px;
+  }
 }
 
 .column_date {
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 14px;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
 }
 
 .categories_wrap {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
 @media (min-width: 768px) {
-    .categories_wrap {
-        margin: 0 0 10px 0;
-    }
+  .categories_wrap {
+    margin: 0 0 10px 0;
+  }
 }
 /* yoshitomi作成分 */
 /* =========== ↓カードにホバーしたときにimgが拡大される =========== */
 
 .stores_card:hover .card_img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 figure {
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
 }
 
 /* ===================== ↓SP_card_CSS ===================== */
 
 .sp_stores_cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0 0;
 }
 .sp_stores_cards::after {
-    display: block;
-    content: "";
-    flex-basis: calc((100% - 3%) / 2);
+  display: block;
+  content: "";
+  flex-basis: calc((100% - 3%) / 2);
 }
 
 .sp_stores_cards .stores_card {
-    /* width: 45%;
+  /* width: 45%;
     max-width: 270px; */
-    margin-bottom: 20px;
-    border-radius: 3px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    flex-basis: calc((100% - 3%) / 2);
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  flex-basis: calc((100% - 3%) / 2);
 }
 
 .sp_stores_cards .stores_card:hover {
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sp_stores_cards .text_inner {
-    width: 90%;
-    margin: 0.5rem auto;
+  width: 90%;
+  margin: 0.5rem auto;
 }
 
 .sp_stores_cards .stores_name {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .sp_stores_cards .stores_catch {
-    padding-bottom: 0.5rem;
-    font-size: 14px;
-    border-bottom: solid 1px #542912;
+  padding-bottom: 0.5rem;
+  font-size: 14px;
+  border-bottom: solid 1px #542912;
 }
 
 .sp_stores_cards .stores_tags {
-    display: flex;
-    margin: 8px 0 0;
-    font-size: 13px;
+  display: flex;
+  margin: 8px 0 0;
+  font-size: 13px;
 }
 
 .sp_stores_cards .stores_tag:not(:first-child) {
-    margin: 0 0 0 10px;
+  margin: 0 0 0 10px;
 }
 
 /* ===================== ↓PC_card_CSS ===================== */
 
 .pc_stores_cards {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px 0 0;
-    max-width: 1100px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  max-width: 1100px;
 }
 
 .pc_stores_cards .stores_card {
-    position: relative;
-    width: 31%;
-    max-width: 280px;
+  position: relative;
+  width: 31%;
+  max-width: 280px;
 }
 
 .pc_stores_cards .stores_card:nth-child(-n + 3) {
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 .pc_stores_cards .front_card {
-    position: absolute;
-    z-index: 10;
+  position: absolute;
+  z-index: 10;
 }
 
 .pc_stores_cards .stores_img {
-    position: relative;
-    width: 95%;
-    height: auto;
+  position: relative;
+  width: 95%;
+  height: auto;
 }
 
 .pc_stores_cards .stores_img img {
-    border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .pc_stores_cards .stores_tags {
-    position: absolute;
-    top: 5px;
+  position: absolute;
+  top: 5px;
 }
 
 .pc_stores_cards .stores_tags p {
-    display: inline-block;
-    margin: 0 0 5px 5px;
-    padding: 3px 5px;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #333;
-    font-size: 14px;
-    border-radius: 14px;
+  display: inline-block;
+  margin: 0 0 5px 5px;
+  padding: 3px 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  font-size: 14px;
+  border-radius: 14px;
 }
 
 .pc_stores_cards .stores_tags p::before {
-    content: "#";
+  content: "#";
 }
 
 .pc_stores_cards .text_inner {
-    width: 95%;
-    padding: 8px;
-    border-radius: 0 0 5px 5px;
-    background-color: #041526;
-    transform: translate(100% 0);
+  width: 95%;
+  padding: 8px;
+  border-radius: 0 0 5px 5px;
+  background-color: #041526;
+  transform: translate(100% 0);
 }
 
 .pc_stores_cards .stores_name {
-    margin-bottom: 0.5rem;
-    color: #fff;
-    font-size: 16px;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 16px;
 }
 
 .pc_stores_cards .stores_catch {
-    color: #fff;
-    font-size: 14px;
+  color: #fff;
+  font-size: 14px;
 }
 
 .pc_stores_cards .back_card {
-    position: relative;
-    margin: 2rem -10px 10px;
-    width: 95%;
-    left: 16px;
-    background-color: #fff;
-    padding: 90% 20px 10px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  margin: 2rem -10px 10px;
+  width: 95%;
+  left: 16px;
+  background-color: #fff;
+  padding: 90% 20px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .pc_stores_cards .card_text {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
-    .sp_stores_cards {
-        display: none;
-    }
+  .sp_stores_cards {
+    display: none;
+  }
 
-    .pc_stores_cards {
-        display: flex;
-    }
-    /* カードが(3n-1)枚のときに左寄せにする */
-    .pc_stores_cards::after {
-        display: block;
-        content: "";
-        width: 31%;
-        max-width: 280px;
-    }
+  .pc_stores_cards {
+    display: flex;
+  }
+  /* カードが(3n-1)枚のときに左寄せにする */
+  .pc_stores_cards::after {
+    display: block;
+    content: "";
+    width: 31%;
+    max-width: 280px;
+  }
 }
 
 /* ===================== ↓more_btn関係 ===================== */
 
 .more_btn {
-    display: block;
-    position: relative;
-    margin: 0 0 50px;
-    padding-right: 30px;
-    text-align: right;
+  display: block;
+  position: relative;
+  margin: 0 0 50px;
+  padding-right: 30px;
+  text-align: right;
 }
 .more_btn::after {
-    content: "\f054";
-    position: absolute;
-    top: 10%;
-    right: 0;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+  content: "\f054";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 @media (min-width: 768px) {
-    .more_btn {
-        margin: 60px 0 0;
-        text-align: right;
-    }
-    .sp_more_btn {
-        display: none;
-    }
+  .more_btn {
+    margin: 60px 0 0;
+    text-align: right;
+  }
+  .sp_more_btn {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
-    .pc_more_btn {
-        display: none;
-    }
+  .pc_more_btn {
+    display: none;
+  }
 }
 
 /* moreボタンでさらに表示 */
 .store_lists article {
-    opacity: 1;
-    transition: all 0.4s ease 0s;
-    overflow: hidden;
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+  overflow: hidden;
 }
 .store_lists article.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    margin: 0 10px;
-    padding: 0;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0 10px;
+  padding: 0;
 }
