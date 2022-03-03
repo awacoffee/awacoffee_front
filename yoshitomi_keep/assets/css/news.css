@@ -11,7 +11,7 @@
   text-align: left;
 }
 @media (min-width: 768px) {
-  #news .column2_aside .inner {
+  #news_under .column2_aside .inner {
     padding-top: 100px;
   }
 }
@@ -72,8 +72,99 @@
     margin: 0 auto;
   }
 }
-/*
-.more_btn {
+
+/* ▼サイドバー▼ */
+.column2_aside {
+  font-family: "Shippori Mincho B1", serif;
+}
+.column2_aside .wrap {
+  height: 100%;
+}
+.column2_aside .inner {
+  height: 100%;
+}
+.side_title {
+  margin-bottom: 50px;
+}
+
+/* h2 */
+.side_title {
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 18px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .side_title {
+    font-size: 20px;
+  }
+}
+.side_lists {
+  margin-bottom: 40px;
+}
+.side_lists .list a {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #542912;
+}
+.side_lists .list {
+  position: relative;
+  font-size: 16px;
+}
+.side_lists .list::after {
+  content: "\f054";
+  position: absolute;
+  top: 35%;
+  right: 1em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transition: all 0.5s;
+}
+.side_lists .list:hover:after {
+  transform: translateX(1em);
+}
+/* サイドバー横に出現、順番入れ替え */
+@media (min-width: 768px) {
+  .column2_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .column2_article {
+    order: 1;
+    flex-basis: 65%;
+  }
+  .column2_aside {
+    order: 2;
+    flex-basis: 35%;
+  }
+  .recommend {
+    order: 3;
+    flex-basis: 100%;
+  }
+  /* アクセスMAPの下部と揃った状態でsticky終わるよう調整 */
+  .column2_aside .inner {
+    padding: 200px 25px 100px;
+  }
+}
+/* サイドバー追従 */
+@media (min-width: 768px) {
+  /* 名前変更 */
+  aside {
+    display: block;
+  }
+  .side_scrool {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+  }
+}
+
+/* ▼moreボタン▼ */
+/* .more_btn {
     display: block;
     position: relative;
     margin: 0 0 50px;
@@ -93,23 +184,21 @@
         margin: 60px 0 0;
         text-align: right;
     }
-}
+} */
 
 /* moreボタンでさらに表示 */
-.news_wrap_cards li {
-  opacity: 1;
-  transition: all 0.4s ease 0s;
-  overflow: hidden;
+/* .news_wrap_cards li {
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+    overflow: hidden;
 }
 .news_wrap_cards li.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
-  margin: 0 10px;
-  padding: 0;
-}
-*/
-
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    margin: 0 10px;
+    padding: 0;
+} */
 
 /* ===================== ↓more_btn関係 ===================== */
 
