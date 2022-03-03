@@ -12,11 +12,15 @@
         margin-bottom: 40px;
     }
 }
+.number_of_searches {
+    font-size: 20px;
+    font-family: "Shippori Mincho B1", serif;
+}
 
 .sp_stores_cars {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 20px;
 }
 .sp_stores_cars .stores_card {

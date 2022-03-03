@@ -67,29 +67,36 @@ form {
 }
 .attention {
     margin-bottom: 20px;
+    text-align: center;
 }
 .attention a {
+    text-decoration: underline;
     color: #e0591e;
 }
 .check_agree {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .check_agree input {
     margin-right: 10px;
 }
-
+.search_btn {
+    text-align: center;
+}
 .search_btn_wrap {
     display: inline-block;
     margin: 30px 0 10px 0;
-    padding: 20px 30px;
+    padding: 20px 70px;
     color: #fff;
-    display: inline-block;
     background-color: #041526;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.35);
     overflow: hidden;
     border-radius: 3px;
     transition: 0.7s;
+}
+.search_btn_wrap input {
+    margin: 0 auto;
 }
 .search_btn_wrap:hover {
     background-color: #fff;

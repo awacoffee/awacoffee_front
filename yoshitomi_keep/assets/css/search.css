@@ -12,6 +12,7 @@
     margin-bottom: 80px;
     background-color: #fff;
 }
+
 .search_content label {
     background-color: #fff;
 }
@@ -29,8 +30,22 @@
     font-size: 15px;
     border-left: #7b850b 5px solid;
     margin-bottom: 50px;
+    text-align: left;
 }
 
+@media (min-width: 768px) {
+    .search_content section {
+        margin-bottom: 40px;
+    }
+    .rasio_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 39px;
+    }
+    .map_svg {
+        width: 50%;
+    }
+}
 input[type="radio"] {
     position: absolute;
     width: 1px;
@@ -166,19 +181,23 @@ input[type="radio"]:checked + .s_search_radios::after {
 @media (min-width: 768px) {
     .search_title {
         font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .area_map_wrap .search_title {
+        margin-bottom: 10px;
     }
     .s_search_radios {
-        font-size: 26px;
+        font-size: 20px;
         padding: 8px 30px 8px 30px;
     }
     .s_search_radios::before {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     .s_search_radios::after {
-        width: 18px;
-        height: 18px;
-        left: 36px;
+        width: 16px;
+        height: 16px;
+        left: 35px;
     }
 }
 
@@ -210,7 +229,7 @@ input[type="checkbox"]:checked + .s_search_btn::after {
 @media (min-width: 768px) {
     .checkbox_wrap {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 0 39px;
     }
 }

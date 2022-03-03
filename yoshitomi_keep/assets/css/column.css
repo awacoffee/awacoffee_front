@@ -4,9 +4,39 @@
 
 /* ======================================================== */
 
+/* ジャンプ先がヘッダーにかからない高さになるように調整 */
+#search_box {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+.search_jump_box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ボタン上margin20px分差し引き */
+.column_page .under_title.inner {
+    padding: 40px 0;
+}
+@media (min-width: 768px) {
+    .search_jump_box {
+        display: none;
+    }
+    .column_page .under_title.inner {
+        padding: 100px 0;
+    }
+}
+.search_jump_btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #542912;
+    border-radius: 2px;
+    color: #fff;
+}
 /* コラム記事タイトル */
-.s_column_title_wrap h2 {
-    font-size: calc(15px + 10 * (100vw - 375px) / 725);
+.s_column_title_wrap h1 {
+    /* font-size: calc(20px + 10 * (100vw - 375px) / 725); */
+    font-size: clamp(20px, 2.3vw, 30px);
     margin-bottom: 20px;
     text-align: left;
 }
@@ -35,6 +65,7 @@
     margin: 0 20px;
 }
 /* 左よこ縦棒 */
+/* h2 */
 .s_column_subtitle {
     padding: 5px 5px 5px 10px;
     font-family: "Shippori Mincho B1";
@@ -42,16 +73,16 @@
     border-left: #7b850b 7px solid;
     margin-bottom: 10px;
     line-height: 1.8;
+    text-align: left;
 }
 @media (min-width: 768px) {
     .s_column_subtitle {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 .s_column_card {
     margin-bottom: 40px;
 }
-
 .s_column_card:nth-last-child(2) {
     margin-bottom: 100px;
 }
@@ -59,7 +90,7 @@
     width: 100%;
     padding-top: 75%;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .s_column_img img {
     width: 100%;
@@ -67,6 +98,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 2px;
 }
 .s_column_text {
     padding: 0 1em;
@@ -82,6 +114,45 @@
         font-size: 16px;
     }
 }
+
+/* ▼レコメンド▼ */
+section.recommend {
+    background-color: #fff;
+}
+
+/* 検索BOX */
+.column_search {
+    margin-bottom: 40px;
+}
+.search_container {
+    display: flex;
+}
+.search_container input[type="text"] {
+    border: 1px solid #542912;
+    padding: 3px 5px;
+    border-radius: 2px;
+    height: 2em;
+    max-width: 100%;
+    overflow: hidden;
+}
+.search_container input[type="submit"] {
+    margin-left: 10px;
+    flex-basis: 20%;
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    color: #542912;
+    display: inline-block;
+}
+@media (min-width: 768px) {
+    .search_container input[type="text"] {
+        flex-basis: 70%;
+    }
+    .search_container input[type="submit"] {
+        flex-basis: 20%;
+    }
+}
+
 /* コラム用／投稿画面とリンクさせたスタイル */
 /* ①太字かつ文字色 */
 .column_page strong {
@@ -103,8 +174,8 @@
     padding: 1em;
     border: 1px solid#542912;
 }
-/* ④h4のスタイルを設定 */
-.column_page h4 {
+/* ④h3のスタイルを設定 */
+.column_page .s_column_card h3 {
     position: relative;
     margin-left: 10px;
     padding: 0.3em 0.3em 0.3em 0.5em;
@@ -113,11 +184,16 @@
     border-left: #7b850b 7px solid;
     margin-bottom: 10px;
 }
-.column_page h4::after {
+.column_page .s_column_card h3::after {
     position: absolute;
     content: "";
     left: -13px;
     bottom: -6px;
     width: 100%;
     border-bottom: 1px solid #7b850b;
+}
+/* ⑤写真のキャプションのスタイル */
+figcaption {
+    margin-bottom: 20px;
+    font-size: 14px;
 }
