@@ -374,6 +374,7 @@ section.recommend {
     flex-basis: 20%;
     cursor: pointer;
     font-family: FontAwesome;
+    font-weight: 900;
     font-size: 1.3em;
     color: #542912;
     display: inline-block;
@@ -435,4 +436,8 @@ figcaption {
 /* ⑥リンクに下線 */
 .s_column_card a:link {
     text-decoration: underline;
+    color: #0000ee;
+}
+.s_column_card a {
+    color: #0000ee;
 }
