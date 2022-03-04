@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+/* ======================================================== */
+/* 店舗詳細ページCSS */
+
+/* レコメンド */
+/* サイドバー */
+/* コラムカード（インタビュー特集がある場合に）このページ用にレイアウト編集した */
+/* ======================================================== */
+
+/* 店舗名　※h1にするのかどうか */
+.store_card {
+    line-height: 1.5;
+}
+.store_name {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+.store_catch {
+    margin-bottom: 15px;
+    font-family: "Shippori Mincho B1", serif;
+    font-size: 20px;
+}
+.store_tags {
+    display: flex;
+    margin-bottom: 15px;
+}
+.store_tag {
+    margin-right: 0.5em;
+}
+.store_tag::before {
+    content: "#";
+}
+.store_fun_jump {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.store_info_btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #041526;
+    border-radius: 2px;
+    color: #fff;
+}
+.store_fun {
+    display: flex;
+    align-items: flex-end;
+}
+.wp_ulike_general_class {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.wp_ulike_btn {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    /* 確認用の枠線 */
+    border: 1px solid #542912;
+}
+.store_mark {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Icon\ ionic-ios-bookmark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.store_mark.checked {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Icon\ ionic-ios-bookmark_checked.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* 画像切り替え */
+.store_img_area {
+    margin-bottom: 20px;
+}
+.store_imgL {
+    position: relative;
+    padding-top: 75%;
+    margin-bottom: 10px;
+    background-color: #041526;
+    border-radius: 2px;
+}
+.store_imgL img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.store_imgs {
+    display: flex;
+    margin-bottom: 20px;
+}
+.store_img {
+    position: relative;
+    flex-basis: calc(100% / 3);
+    padding-top: 24%;
+    background-color: #041526;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.store_img:last-of-type {
+    margin-right: 0;
+}
+.store_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.store_desc {
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.store_text_inner {
+    display: flex;
+    align-items: flex-end;
+}
+.store_card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+.store_illust_01,
+.store_illust_02 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+.store_illust_01 {
+    background-image: url(../img/store_staff02.png);
+    margin-left: 40px;
+}
+.store_illust_02 {
+    background-image: url(../img/store_menu01.png);
+    margin-left: 30px;
+}
+.store_commit_text {
+    text-align: justify;
+}
+.store_commit,
+.store_menu_area,
+.details {
+    margin-bottom: 65px;
+}
+.store_menu_area {
+    padding: 14px;
+    border: 1px solid #7b850b;
+    border-radius: 2px;
+}
+.details {
+    display: flex;
+    flex-wrap: wrap;
+}
+.details dt {
+    width: 30%;
+    background-color: #f6f4ef;
+    font-family: "Shippori Mincho B1", serif;
+}
+.details dd {
+    width: 70%;
+}
+.details dt,
+.details dd {
+    font-size: 14px;
+    padding: 10px 8px;
+    border-bottom: 1px solid #7b850b;
+}
+.details dt:first-of-type,
+.details dd:first-of-type {
+    border-top: 1px solid #7b850b;
+}
+.store_map {
+    position: relative;
+    padding-top: 75%;
+}
+.store_map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recommend_store_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recommend_title {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+/* ▼サイドバー▼ */
+
+.column2_aside {
+    font-family: "Shippori Mincho B1", serif;
+}
+.column2_aside .wrap {
+    height: 100%;
+}
+.column2_aside .inner {
+    height: 100%;
+}
+.side_search {
+    max-width: 480px;
+}
+.side_title {
+    margin-bottom: 50px;
+}
+.side_title span {
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 20px;
+}
+.side_lists .list a {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #542912;
+}
+.side_lists .list {
+    position: relative;
+    font-size: 16px;
+}
+.side_lists .list::after {
+    content: "\f054";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/* サイドバー横に出現、順番入れ替え */
+@media (min-width: 1100px) {
+    .column2_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .column2_article {
+        order: 1;
+        flex-basis: 60%;
+    }
+    .column2_aside {
+        order: 2;
+        flex-basis: 35%;
+    }
+    .recommend {
+        order: 3;
+        flex-basis: 100%;
+    }
+    /* アクセスMAPの下部と揃った状態でsticky終わるよう調整 */
+    .column2_aside .inner {
+        padding: 200px 25px 100px;
+    }
+}
+/* サイドバー追従 */
+@media (min-width: 1100px) {
+    /* 名前変更 */
+    aside {
+        display: block;
+    }
+    .side_scrool {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 100px;
+    }
+}
+
+/* ▼インタビュー記事ある場合（コラムカード:横）▼ */
+.side_column {
+    max-width: 480px;
+    min-width: 362px;
+    background-color: #f6f4ef;
+    padding: 10px;
+    border-radius: 2px;
+}
+.side_column_title {
+    padding: 10px;
+    font-size: 20px;
+}
+.side_column_wrap {
+    margin: 0 auto;
+    /* teisei */
+    min-width: 332px;
+    background-color: #fff;
+}
+.side_column_wrap + .side_column_wrap {
+    margin-top: 20px;
+}
+.side_column_inner {
+    width: 100%;
+    display: flex;
+}
+/* 2.21訂正 */
+.side_column_img_wrap {
+    width: 44%;
+    min-width: 200px;
+    overflow: hidden;
+}
+.side_column_meta {
+    margin-left: 1%;
+    width: 56%;
+    padding: 5px 8px;
+}
+.side_column_date {
+    font-size: 12px;
+}
+.side_column_meta h3 {
+    margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+    .side_column_meta h3 {
+        font-size: 16px;
+    }
+}
+.side_column_text {
+    margin-bottom: 5px;
+}
+.side_column_meta .categories {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: 1px solid#542912;
+    font-size: 12px;
+}
+@media (min-width: 1100px) {
+    .side_column {
+        padding: 8px;
+    }
+    .side_column_title {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .side_column_wrap {
+        min-width: 250px;
+    }
+    .side_column_img_wrap {
+        min-width: 145px;
+    }
+    .side_column_meta h3 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    .side_column_text {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+}

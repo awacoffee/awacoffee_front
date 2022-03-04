@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ▼設定するのであれば入れる▼ -->
+    <meta name="keywords" content="" />
+    <!-- ▼ディスクリプション→コンテンツ班からもらう▼ -->
+    <meta name="description" content="" />
+
+    <!-- ▼フォント:Rollerscript Rough▼ -->
+    <link rel="stylesheet" href="https://use.typekit.net/twf1hjd.css" />
+
+    <!-- ▼フォント:Shippori Mincho B1(Regular,Medium,Bold) -->
+    <!-- ▼フォント:Noto Sans Japanese(Regular,Medium,Bold) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ▼FontAwesome▼ -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ▼リセットCSS▼ -->
+    <link href="./assets/css/reset.css" rel="stylesheet" media="all" />
+    <!-- ▼共通スタイル▼ -->
+    <link href="./assets/css/common.css" rel="stylesheet" media="all" />
+    <!-- ▼条件検索結果ページのCSS /ファイル名記載する▼ -->
+    <link href="./assets/css/column_list.css" rel="stylesheet" media="all" />
+    <title>コラム一覧</title>
+  </head>
+  <body>
+    <!-- ▼SP下層ヘッダー▼ -->
+    <header>
+      <div class="header_wrap under mainvisual_wrap">
+        <div class="header_inner">
+          <div class="header_wrap_box">
+            <!-- ▼カップicon▼ -->
+            <a href="" class="header_wrap_box_icon">
+              <img
+                src="./assets/img/icon.svg"
+                alt="Awa Our Coffee Hourのアイコン"
+              />
+            </a>
+            <nav>
+              <ul class="header_nav_list">
+                <li>
+                  <a href="" class="header_nav_item">条件検索</a>
+                </li>
+                <li>
+                  <a href="" class="header_nav_item">コラム</a>
+                </li>
+                <li>
+                  <a href="" class="header_nav_item">コーヒー入門知識</a>
+                </li>
+                <li>
+                  <a href="" class="header_nav_item">マイページ</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- ▼ハンバーガーメニュー▼ -->
+            <div class="header_wrap_box_nav">
+              <span class="header_wrap_box_nav_line"></span>
+              <span class="header_wrap_box_nav_line"></span>
+              <span class="header_wrap_box_nav_line"></span>
+            </div>
+          </div>
+          <!-- header_wrap_box -->
+        </div>
+      </div>
+      <!-- /.header_wrap -->
+
+      <!-- ▼ドロワー▼ -->
+      <div class="drower">
+        <div class="wrap">
+          <div class="inner">
+            <nav class="drower_nav">
+              <div class="drower_nav_close"></div>
+              <div class="drower_nav_logo">
+                <a href=""
+                  ><img
+                    src="./assets/img/logo_aoch.png"
+                    alt="Awa Our Coffee Hour"
+                /></a>
+              </div>
+              <ul class="drower_nav_box">
+                <li>
+                  <a href="" class="drower_nav_box_item">店で飲みたい</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_box_item">豆を買いたい</a>
+                </li>
+              </ul>
+              <ul class="drower_nav_list">
+                <li>
+                  <a href="" class="drower_nav_item">条件検索</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item">コラム</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item">コーヒー入門知識</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item">マイページ</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item">お問い合わせ</a>
+                </li>
+                <li>
+                  <a href="" class="drower_nav_item"
+                    ><i class="fa-brands fa-instagram fa-2x"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="column_list_under">
+      <!-- ▼タイトルエリア▼ -->
+      <div class="wrap">
+        <div class="under_title inner">
+          <div class="under_wrap_title">
+            <p>Column</p>
+            <h1>コラム</h1>
+          </div>
+        </div>
+      </div>
+      <!-- /.wrap -->
+
+      <section>
+        <div class="wrap">
+          <div class="inner">
+            <div class="text_btns">
+              <ul class="column_tab_wrap">
+                <li class="btn">
+                  <h2 class="column_item_btn"><a href="">コーヒー入門知識</a></h2>
+                </li>
+                <li class="btn">
+                  <h2 class="column_item_btn"><a href="">特集</a></h2>
+                </li>
+                <li class="btn">
+                  <h2 class="column_item_btn"><a href="" >ブログ</a></h2>
+                </li>
+              </ul>
+              <div id="search_box" class="column_search">
+                <form method="get" action="#" class="search_container">
+                    <input type="text" size="25" placeholder="キーワード検索">
+                    <input type="submit" value="&#xf002">
+                </form>
+            </div>
+            </div>
+
+
+            <div class="cards_wrap is_column_active">
+              <div class="card_wrap">
+                <article class="column_wrap">
+                  <a href="">
+                    <div class="column_inner">
+                      <figure class="column_img_wrap">
+                        <img
+                          src="./assets/img/4-3img.jpg"
+                          alt="コラム記事のサムネイル画像"
+                        />
+                      </figure>
+                      <div class="column_meta">
+                        <div class="categories_wrap">
+                          <time class="column_date" datetime="the_time"
+                            >2022.03.14</time
+                          >
+                          <ul class="categories">
+                            <li>コーヒー入門知識</li>
+                          </ul>
+                        </div>
+                        <h3>シングルオリジンとブレンドの違い</h3>
+                        <div class="column_text">
+                          <p>自家焙煎にこだわった至福の一杯</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <article class="column_wrap">
+                  <a href="">
+                    <div class="column_inner">
+                      <figure class="column_img_wrap">
+                        <img
+                          src="./assets/img/4-3img.jpg"
+                          alt="コラム記事のサムネイル画像"
+                        />
+                      </figure>
+                      <div class="column_meta">
+                        <div class="categories_wrap">
+                          <time class="column_date" datetime="the_time"
+                            >2022.03.14</time
+                          >
+                          <ul class="categories">
+                            <li>コーヒー入門知識</li>
+                          </ul>
+                        </div>
+                        <h3>シングルオリジンとブレンドの違い</h3>
+                        <div class="column_text">
+                          <p>自家焙煎にこだわった至福の一杯</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <article class="column_wrap">
+                  <a href="">
+                    <div class="column_inner">
+                      <figure class="column_img_wrap">
+                        <img
+                          src="./assets/img/4-3img.jpg"
+                          alt="コラム記事のサムネイル画像"
+                        />
+                      </figure>
+                      <div class="column_meta">
+                        <div class="categories_wrap">
+                          <time class="column_date" datetime="the_time"
+                            >2022.03.14</time
+                          >
+                          <ul class="categories">
+                            <li>コーヒー入門知識</li>
+                          </ul>
+                        </div>
+                        <h3>シングルオリジンとブレンドの違い</h3>
+                        <div class="column_text">
+                          <p>自家焙煎にこだわった至福の一杯</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <article class="column_wrap">
+                  <a href="">
+                    <div class="column_inner">
+                      <figure class="column_img_wrap">
+                        <img
+                          src="./assets/img/4-3img.jpg"
+                          alt="コラム記事のサムネイル画像"
+                        />
+                      </figure>
+                      <div class="column_meta">
+                        <div class="categories_wrap">
+                          <time class="column_date" datetime="the_time"
+                            >2022.03.14</time
+                          >
+                          <ul class="categories">
+                            <li>コーヒー入門知識</li>
+                          </ul>
+                        </div>
+                        <h3>シングルオリジンとブレンドの違い</h3>
+                        <div class="column_text">
+                          <p>自家焙煎にこだわった至福の一杯</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <article class="column_wrap">
+                  <a href="">
+                    <div class="column_inner">
+                      <figure class="column_img_wrap">
+                        <img
+                          src="./assets/img/4-3img.jpg"
+                          alt="コラム記事のサムネイル画像"
+                        />
+                      </figure>
+                      <div class="column_meta">
+                        <div class="categories_wrap">
+                          <time class="column_date" datetime="the_time"
+                            >2022.03.14</time
+                          >
+                          <ul class="categories">
+                            <li>コーヒー入門知識</li>
+                          </ul>
+                        </div>
+                        <h3>シングルオリジンとブレンドの違い</h3>
+                        <div class="column_text">
+                          <p>自家焙煎にこだわった至福の一杯</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <article class="column_wrap">
+                  <a href="">
+                    <div class="column_inner">
+                      <figure class="column_img_wrap">
+                        <img
+                          src="./assets/img/4-3img.jpg"
+                          alt="コラム記事のサムネイル画像"
+                        />
+                      </figure>
+                      <div class="column_meta">
+                        <div class="categories_wrap">
+                          <time class="column_date" datetime="the_time"
+                            >2022.03.14</time
+                          >
+                          <ul class="categories">
+                            <li>コーヒー入門知識</li>
+                          </ul>
+                        </div>
+                        <h3>シングルオリジンとブレンドの違い</h3>
+                        <div class="column_text">
+                          <p>自家焙煎にこだわった至福の一杯</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+          <!-- inner -->
+        </div>
+        <!-- wrap -->
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer_wrap" class="wrap">
+        <div class="inner">
+          <!-- ▼フッター▼ -->
+          <div class="footer_flex">
+            <div class="footer_logo">
+              <img
+                src="./assets/img/logo_aoch.png"
+                alt="Awa Our Coffee Hourのロゴ"
+              />
+            </div>
+            <nav class="footer_nav">
+              <ul class="footer_nav_list">
+                <li class="footer_nav_item">
+                  <a href="">お店で飲みたい</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">豆を買いたい</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">条件検索</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">コラム</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">マイページ</a>
+                </li>
+              </ul>
+              <ul class="footer_nav_list">
+                <li class="footer_nav_item">
+                  <a href="">お問い合わせ</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">このサイトについて</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href="">プライバシーポリシー</a>
+                </li>
+                <li class="footer_nav_item">
+                  <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- footer_flex -->
+
+          <p class="footer_wrap_copyright">
+            <small>&copy; 2022 動</small>
+          </p>
+        </div>
+        <!-- viewport -->
+      </div>
+      <!-- footer_wrap -->
+    </footer>
+
+    <!-- ▼Javascript▼ -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/front.js"></script>
+  </body>
+</html>
