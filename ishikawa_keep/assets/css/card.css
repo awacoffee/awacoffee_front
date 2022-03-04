@@ -186,15 +186,15 @@ figure {
   border-bottom: solid 1px #542912;
 }
 
-.sp_stores_cards .stores_tags {
+/* .sp_stores_cards .stores_tags {
   display: flex;
   margin: 8px 0 0;
   font-size: 13px;
-}
+} */
 
-.sp_stores_cards .stores_tag:not(:first-child) {
+/* .sp_stores_cards .stores_tag:not(:first-child) {
   margin: 0 0 0 10px;
-}
+} */
 
 /* ===================== ↓PC_card_CSS ===================== */
 
@@ -213,10 +213,13 @@ figure {
   max-width: 280px;
 }
 
-.pc_stores_cards .stores_card:nth-child(-n + 3) {
-  margin-bottom: 3%;
+/* 下層の話 */
+.pc_stores_cards .stores_card {
+  margin-bottom: 20px;
 }
-
+.pc_stores_cards .stores_card:nth-last-of-type(-n + 3) {
+  margin-bottom: 0;
+}
 .pc_stores_cards .front_card {
   position: absolute;
   z-index: 10;
@@ -228,16 +231,16 @@ figure {
   height: auto;
 }
 
-.pc_stores_cards .stores_img img {
+/* .pc_stores_cards .stores_img img {
   border-radius: 5px 5px 0 0;
-}
+} */
 
-.pc_stores_cards .stores_tags {
+/* .pc_stores_cards .stores_tags {
   position: absolute;
   top: 5px;
-}
+} */
 
-.pc_stores_cards .stores_tags p {
+/* .pc_stores_cards .stores_tags p {
   display: inline-block;
   margin: 0 0 5px 5px;
   padding: 3px 5px;
@@ -245,12 +248,13 @@ figure {
   color: #333;
   font-size: 14px;
   border-radius: 14px;
-}
+} */
 
-.pc_stores_cards .stores_tags p::before {
+/* .pc_stores_cards .stores_tags p::before {
   content: "#";
-}
+} */
 
+/*共通次第で消す  */
 .pc_stores_cards .text_inner {
   width: 95%;
   padding: 8px;
@@ -270,6 +274,7 @@ figure {
   font-size: 14px;
 }
 
+/* ab? */
 .pc_stores_cards .back_card {
   position: relative;
   margin: 2rem -10px 10px;
@@ -281,9 +286,12 @@ figure {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
-.pc_stores_cards .card_text {
+/* .pc_stores_cards .card_text {
   font-size: 14px;
-}
+} */
+
+/* 
+=============================================== */
 
 @media (min-width: 768px) {
   .sp_stores_cards {
