@@ -35,10 +35,13 @@
 }
 /* コラム記事タイトル */
 .s_column_title_wrap h1 {
-    /* font-size: calc(20px + 10 * (100vw - 375px) / 725); */
     font-size: clamp(20px, 2.3vw, 30px);
     margin-bottom: 20px;
     text-align: left;
+}
+.s_column_title_wrap {
+    margin-bottom: 25px;
+    font-size: 16px;
 }
 
 .s_column_title_wrap .tags {
@@ -55,7 +58,6 @@
     content: "#";
 }
 .s_column_title_text {
-    margin-bottom: 60px;
     line-height: 1.375;
 }
 
@@ -372,6 +374,7 @@ section.recommend {
     flex-basis: 20%;
     cursor: pointer;
     font-family: FontAwesome;
+    font-weight: 900;
     font-size: 1.3em;
     color: #542912;
     display: inline-block;
@@ -408,7 +411,7 @@ section.recommend {
     border: 1px solid#542912;
 }
 /* ④h3のスタイルを設定 */
-.column_page .s_column_card h3 {
+.column_page .s_column_thirdtitle {
     position: relative;
     margin-left: 10px;
     padding: 0.3em 0.3em 0.3em 0.5em;
@@ -433,4 +436,8 @@ figcaption {
 /* ⑥リンクに下線 */
 .s_column_card a:link {
     text-decoration: underline;
+    color: #0000ee;
+}
+.s_column_card a {
+    color: #0000ee;
 }

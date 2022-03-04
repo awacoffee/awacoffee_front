@@ -1,0 +1,156 @@
+main {
+  padding: 20px;
+  margin: 50px auto;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: antiquewhite;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1;
+  background-color: #041526;
+}
+.loading.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* @keyframes flashing {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.loadingText {
+  animation: 2s flashing;
+  z-index: 1;
+  color: #fff;
+} */
+
+/* .bg {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  font-weight: bold;
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  color: #2c0b8e;
+  animation: text 1s;
+}
+@keyframes text {
+  0% {
+    color: #2c0b8e;
+  }
+  100% {
+    color: #fff;
+  }
+} */
+
+.bg {
+  /* position: absolute;
+  top: 0;
+  left: -200%;
+  z-index: -1;
+  height: 100%;
+  width: 260%;
+  background-color: #fff;
+  animation-name: bg;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  transform: skewX(-25deg); */
+  position: absolute;
+  left: -10px;
+  height: 100%;
+  width: 110vw;
+  /* padding: 10px 10px; */
+  border-radius: 5px;
+  /* background-color: #999; */
+  background-image: linear-gradient(100deg, #fff 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 300%;
+  color: white;
+  text-decoration: none;
+  /* transition: background 500ms ease-in-out; */
+  animation-name: bg;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+  animation-timing-function: cubic-bezier(0.91, 0.09, 0.77, 0.91);
+}
+
+@media (min-width: 760px) {
+  .bg {
+    background-image: linear-gradient(135deg, #fff 50%, transparent 50%);
+  }
+}
+@keyframes bg {
+  0% {
+  }
+  100% {
+    /* transform: translate(50%); */
+    /* left: -200%; */
+    /* left: 0; */
+    background-position: 0;
+  }
+}
+/*== 背景が流れる（斜め） */
+.bgskew::before {
+  content: "";
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: -170%;
+  /*色や形状*/
+  background: #333;
+  width: 170%;
+  height: 100%;
+  transform: skewX(-25deg);
+}
+
+/*hoverした時のアニメーション*/
+.bgskew:hover::before {
+  animation: skewanime 0.5s forwards; /*アニメーションの名前と速度を定義*/
+}
+
+@keyframes skewanime {
+  100% {
+    left: -10%; /*画面の見えていない左から右へ移動する終了地点*/
+  }
+}
+.btn-hover-bg {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: #999;
+  background-image: linear-gradient(135deg, #49b6f6 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 300%;
+  color: white;
+  text-decoration: none;
+  transition: background 500ms ease-in-out;
+}
+
+.btn-hover-bg:hover {
+  background-position: 0;
+}
