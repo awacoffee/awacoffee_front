@@ -10,6 +10,10 @@
 /* ドロワーメニュー */
 /* ボタンとその動き */
 /* フッター */
+
+/* 今後入れいていく*/
+/* カード */
+/* カード */
 /* ======================================================== */
 
 body {
@@ -18,8 +22,6 @@ body {
   font-size: 14px;
   font-weight: "";
   letter-spacing: "";
-  /* line-height: 2rem; */
-  /* 改行用 */
   overflow-wrap: break-word;
 }
 body.fixed {
@@ -27,9 +29,7 @@ body.fixed {
   width: 100%;
 }
 
-/* bobyのcolorで行くなら消す */
 h1 {
-  /* color: #542912; */
   font-family: "Shippori Mincho B1", serif;
   font-size: 12px;
   font-weight: bold;
@@ -38,7 +38,6 @@ h1 {
   text-align: center;
 }
 h2 {
-  /* color: #542912; */
   font-family: "Shippori Mincho B1", serif;
   font-size: 12px;
   font-weight: bold;
@@ -47,7 +46,6 @@ h2 {
   text-align: center;
 }
 h3 {
-  /* color: #542912; */
   font-family: "Shippori Mincho B1", serif;
   font-size: 16px;
   font-weight: "";
@@ -75,8 +73,6 @@ a {
   cursor: pointer;
 }
 a img {
-  /* transition: 1s ease-in-out; */
-  /* 前田さん希望 */
   transition: 0.3s ease-in-out;
 }
 a img:hover {
@@ -103,7 +99,7 @@ section:nth-of-type(even) {
   text-align: center;
   line-height: 1.85;
 }
-
+/* ======================================================= */
 /* レスポンス */
 @media (min-width: 768px) {
   h1 {
@@ -142,7 +138,7 @@ section:nth-of-type(even) {
     line-height: 2.375;
   }
 }
-
+/* ======================================================= */
 /* ヘッダー */
 /* fuji これでいいか？ */
 .header_wrap {
@@ -153,7 +149,7 @@ section:nth-of-type(even) {
   padding: 0 20px;
   height: 100%;
 }
-
+/* ======================================================= */
 /* fuji 下層ヘッダーまで*/
 .header_wrap_box {
   /* opacity: 0; */
@@ -230,7 +226,7 @@ section:nth-of-type(even) {
     right: calc(50% - 625px);
   }
 }
-
+/* ======================================================= */
 /* 下層のヘッダー */
 .header_wrap.under {
   height: 150px;
@@ -246,7 +242,7 @@ section:nth-of-type(even) {
     /* height: clamp(150px, 20vw, 200px); */
   }
 }
-
+/* ======================================================= */
 /* 下層タイトルエリア */
 .under_title.inner {
   margin: 0 20px;
@@ -269,7 +265,7 @@ section:nth-of-type(even) {
     font-size: 48px;
   }
 }
-
+/* ======================================================= */
 /* ハンバーガーメニュー */
 .header_wrap_box_nav {
   position: fixed;
@@ -313,7 +309,7 @@ section:nth-of-type(even) {
 .header_wrap_box_nav_line:nth-of-type(3).active {
   transform: translateY(5px) rotate(-45deg);
 }
-
+/* ======================================================= */
 /* ドロワーメニュー */
 .drower {
   display: none;
@@ -381,7 +377,7 @@ section:nth-of-type(even) {
 .drower_nav_list:last-child {
   padding-bottom: 50px;
 }
-
+/* ======================================================= */
 /* btn*/
 /* 2.27btn更新 */
 .btn_wrap {
@@ -422,7 +418,7 @@ section:nth-of-type(even) {
     font-size: 20px;
   }
 }
-
+/* ======================================================= */
 /* フッター */
 footer {
   background-color: #041526;
