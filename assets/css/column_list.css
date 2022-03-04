@@ -1,0 +1,250 @@
+/* ======================================================== */
+/* コラム一覧全部だしCSS column_list.css*/
+/* ======================================================== */
+
+.text_btns ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .text_btns ul {
+    flex-grow: 1;
+    /* justify-content: right; */
+    justify-content: left;
+  }
+}
+.text_btns li {
+  padding: 0 20px;
+}
+.text_btns li h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 16px;
+}
+
+.column_item_btn::after {
+  display: block;
+  position: relative;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.column_item_btn:hover:after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .text_btns li h2 {
+    font-size: 20px;
+  }
+}
+.text_btns li + li {
+  border-left: 1px solid #333;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .text_btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column_tab_wrap {
+    width: 50%;
+    /* transform: translateX(25%); */
+  }
+}
+
+/* ======================================================== */
+/*
+/* 検索BOX */
+/* ======================================================== */
+
+.column_search {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .column_search {
+    display: flex;
+    justify-content: end;
+  }
+}
+.search_container {
+  display: flex;
+  justify-content: center;
+}
+.search_container input[type="text"] {
+  border: 1px solid #542912;
+  padding: 3px 5px;
+  border-radius: 2px;
+  height: 2em;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.search_container input[type="submit"] {
+  margin-left: 10px;
+  /* flex-basis: 20%; */
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  color: #542912;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .search_container input[type="text"] {
+    flex-basis: 70%;
+  }
+  .search_container input[type="submit"] {
+    flex-basis: 20%;
+  }
+}
+
+/* ======================================================== */
+/* card.cssと同じ card.css*/
+/* 検索BOX */
+/* いらないところコメントアウト */
+/* ======================================================== */
+
+/* ▼コラムカード▼ */
+.column_img_wrap img {
+  width: 150px;
+  height: 112.5px;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .column_img_wrap img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* .column_tab_wrap h2.column_active a {
+    border-bottom: #5d0f0f 1px solid;
+} */
+/* .cards_wrap {
+    display: none;
+} */
+/* .cards_wrap.is_column_active {
+    display: block;
+} */
+@media (min-width: 768px) {
+  .card_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 30px;
+  }
+}
+
+.column_wrap {
+  margin: 0 auto;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+
+.column_wrap:hover {
+  box-shadow: 0 0 15px #542912;
+}
+@media (min-width: 768px) {
+  .column_wrap {
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
+  }
+}
+
+.column_wrap {
+  margin-top: 20px;
+}
+
+.column_inner {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .column_inner {
+    display: block;
+  }
+}
+
+.column_img_wrap {
+  min-width: 100px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+@media (min-width: 768px) {
+  .column_img_wrap {
+    width: 100%;
+  }
+}
+
+.column_meta {
+  flex-grow: 2;
+  margin-left: 10px;
+  border-bottom: 1px solid #7b850b;
+}
+@media (min-width: 768px) {
+  .column_meta {
+    margin-left: 0;
+    padding: 10px 18px 16px;
+    border-bottom: none;
+  }
+}
+
+.column_meta h3 {
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .column_meta h3 {
+    font-size: 20px;
+    border-bottom: 1px solid #7b850b;
+    padding-bottom: 15px;
+    margin-bottom: 8px;
+  }
+}
+
+.column_text {
+  display: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .column_text {
+    display: block;
+  }
+}
+
+.categories {
+  display: inline-block;
+
+  padding: 0.2em 0.5em;
+  font-size: 12px;
+  background-color: #f6f4ef;
+}
+@media (min-width: 768px) {
+  .categories {
+    font-size: 14px;
+  }
+}
+
+.column_date {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.categories_wrap {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .categories_wrap {
+    margin: 0 0 10px 0;
+  }
+}
