@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* ======================================================== */
+/* 条件検索結果ページCSS */
+
+/* ======================================================== */
+
+.search_words_area,
+.result_area {
+    padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+    .search_words_area {
+        padding-bottom: 60px;
+    }
+}
+
+.search_words_box {
+    margin-bottom: 40px;
+}
+.search_words_list {
+    padding: 10px;
+}
+.search_words_item {
+    display: inline-block;
+    padding: 0.3em 1em;
+    background-color: #f6f4ef;
+    border-radius: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+    .search_words_item {
+        font-size: 16px;
+    }
+}
+
+.result_text::before {
+    content: "■";
+}
+.result_text {
+    margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+    .result_text {
+        margin-bottom: 80px;
+        font-size: 20px;
+        text-align: center;
+    }
+}

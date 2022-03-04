@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+/* ======================================================== */
+/* フロントページCSS */
+
+/* メインビジュアル */
+/* 店舗情報セクションのタブ */
+/* 店舗カード */
+/* コラムカード */
+/* 新着一覧カード */
+/* 「飲む」「豆」ボタン下部fix */
+/* ======================================================== */
+
+/* fuji headerより移植 */
+.mainvisual_wrap {
+    /* 確認用の背景色。実際は動画 */
+    background-color: #000;
+    position: relative;
+    height: 100vh;
+}
+.mainvisual_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; */
+    /* スマホ横画面対応用 */
+    width: 100vmin;
+}
+.mainvisual_wrap_logo {
+    /* padding-top: 145px;
+  margin: 0 auto;
+  width: 75%;
+  min-width: 284px;
+  text-align: center; */
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .mainvisual_wrap_logo {
+        width: 100%;
+    }
+}
+.mainvisual_wrap_catch {
+    text-align: center;
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: bold;
+    /* 可変させる */
+    font-size: calc(0.75rem + ((1vw - 3.7px) * 2.0101));
+    line-height: 2;
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .mainvisual_wrap_catch {
+        /* font-size: 26px;
+    line-height: 2.15; */
+        /* font-size: min(2vw, 20px); */
+        font-size: calc(1.25rem + ((1vw - 7.68px) * 0.3759));
+        line-height: 2.15;
+    }
+}
+@media (min-width: 768px) {
+    /* ※PC版aboutのみ余白広め */
+    .about .inner {
+        padding: 170px 25px 200px;
+    }
+}
+
+.tab_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #041526;
+}
+@media (min-width: 768px) {
+    .tab_wrap {
+        justify-content: flex-start;
+    }
+}
+.tab_wrap li {
+    flex-basis: calc((100% - 5px) / 2);
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid #041526;
+    font-size: 16px;
+    color: #041526;
+}
+@media (min-width: 768px) {
+    .tab_wrap li {
+        flex-basis: calc((100% - 10px) / 3);
+        margin-right: 10px;
+    }
+}
+.tab_wrap li a {
+    transition: none;
+}
+.tab_wrap li:last-of-type {
+    margin-right: 0;
+}
+.tab_wrap li.active {
+    background-color: #041526;
+    color: #fff;
+}
+.tab_item {
+    display: block;
+    font-family: "Shippori Mincho B1", serif;
+}
+/* .tab_area_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+.area {
+    display: none;
+}
+.area.is_active {
+    display: block;
+}
+
+/* fuji CSS移動 */
+
+/* column */
+/* fuji カード全体がいらないならcolumn_wrap:hover削除 */
+.column_wrap {
+    margin: 0 auto;
+    min-width: 332px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.column_wrap:hover {
+    box-shadow: 0 0 15px #542912;
+}
+.column_wrap + .column_wrap {
+    margin-top: 20px;
+}
+.column_inner {
+    width: 100%;
+    display: flex;
+}
+/* fuji column_追加 htmlも変更 */
+.column_img_wrap {
+    width: 44%;
+    min-width: 200px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.column_meta {
+    margin-left: 1%;
+    width: 56%;
+    padding: 5px 8px;
+}
+.column_meta h3 {
+    margin-bottom: 5px;
+}
+.column_text {
+    margin-bottom: 5px;
+}
+.column_meta .categories {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: 1px solid#542912;
+    font-size: 12px;
+}
+.column_date {
+    font-size: 12px;
+}
+@media (min-width: 768px) {
+    .column_wrap + .column_wrap {
+        margin: 0 0 0 10%;
+    }
+    .column_inner {
+        display: block;
+    }
+    .card_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column_wrap {
+        box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
+        min-width: auto;
+    }
+    .column_img_wrap {
+        width: 100%;
+    }
+    .column_date {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .column_meta {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 18px 16px;
+    }
+    .column_text {
+        margin-bottom: 10px;
+    }
+}
+
+/* 新着情報 */
+.news_wrap_card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #7b850b;
+}
+.news_wrap_card:last-child {
+    margin-bottom: 0;
+}
+.news_wrap_card_icon {
+    flex-basis: 42px;
+    text-align: center;
+}
+.news_wrap_card_inner {
+    margin-left: 1%;
+    padding: 0.5em;
+}
+.news_date {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.news_head {
+    margin-bottom: 6px;
+}
+.news_text {
+    line-height: 1.5em;
+}
+@media (min-width: 768px) {
+    .news_wrap_cards {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* 「飲む」「豆」ボタン下部fix */
+.bottom_box {
+    /* 2.21訂正 */
+    opacity: 0;
+    transition: 1s ease-in-out;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 99;
+}
+.bottom_box_list {
+    display: flex;
+}
+@media (min-width: 768px) {
+    .bottom_box_list {
+        justify-content: center;
+    }
+}
+.bottom_box_item {
+    flex-basis: 50%;
+    text-align: center;
+    font-family: "Shippori Mincho B1", serif;
+    font-size: 20px;
+    color: #fff;
+}
+.bottom_box_item {
+    background-color: rgba(4, 21, 38, 0.9);
+}
+.bottom_box_item:last-of-type {
+    background-color: rgba(86, 121, 155, 0.8);
+}
+.bottom_box_item a {
+    display: block;
+    height: 55px;
+    line-height: 55px;
+}
+@media (min-width: 768px) {
+    .bottom_box_item:first-of-type a {
+        padding-left: calc((100% - 250px));
+    }
+    .bottom_box_item:last-of-type a {
+        padding-right: calc((100% - 250px));
+    }
+}
