@@ -35,10 +35,13 @@
 }
 /* コラム記事タイトル */
 .s_column_title_wrap h1 {
-    /* font-size: calc(20px + 10 * (100vw - 375px) / 725); */
     font-size: clamp(20px, 2.3vw, 30px);
     margin-bottom: 20px;
     text-align: left;
+}
+.s_column_title_wrap {
+    margin-bottom: 25px;
+    font-size: 16px;
 }
 
 .s_column_title_wrap .tags {
@@ -55,7 +58,6 @@
     content: "#";
 }
 .s_column_title_text {
-    margin-bottom: 60px;
     line-height: 1.375;
 }
 
