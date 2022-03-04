@@ -430,3 +430,7 @@ figcaption {
     margin-bottom: 20px;
     font-size: 14px;
 }
+/* ⑥リンクに下線 */
+.s_column_card a:link {
+    text-decoration: underline;
+}
