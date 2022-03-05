@@ -4,14 +4,15 @@
 　color: white;
 以外は適宜変更してください
 */
+@media (min-width: 768px) {
+  .header_pc_bgc {
+    height: 60px;
+    width: 100%;
+    position: fixed;
 
-.header_pc_bgc {
-  height: 60px;
-  width: 100%;
-  position: fixed;
-
-  background-color: inherit;
-  color: white;
+    background-color: inherit;
+    color: white;
+  }
 }
 
 .bgc_white {
