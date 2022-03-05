@@ -20,7 +20,7 @@
             <div class="search_content">
                 <!-- エリア別 -->
                 <section class="area_map_wrap">
-                    <h3 class="search_title">エリア</h3>
+                    <h2 class="search_title">エリア</h2>
 
                     <div class="map_wrap">
                         <figure class="map_svg">
@@ -45,7 +45,7 @@
                 </section>
                 <!-- 目的別 -->
                 <section class="purpose_wrap">
-                    <h3 class="search_title">目的で探す</h3>
+                    <h2 class="search_title">目的で探す</h2>
                     <div>
                         <input type="radio" name="purpose" value="drink" id="drink" checked />
                         <label for="drink" class="s_search_btn">お店で飲みたい</label>
@@ -55,7 +55,7 @@
                 </section>
                 <!-- シチュエーション別 -->
                 <section class="situation_wrap">
-                    <h3 class="search_title">シチュエーションで探す</h3>
+                    <h2 class="search_title">シチュエーションで探す</h2>
                     <div class="checkbox_wrap">
                         <input type="checkbox" name="situation[]" value="solo" id="1" />
                         <label for="1" class="s_search_btn">一人で</label>
@@ -75,7 +75,7 @@
                 </section>
                 <!-- サービス別 -->
                 <section class="situation_wrap">
-                    <h3 class="search_title">サービス・設備</h3>
+                    <h2 class="search_title">サービス・設備</h2>
                     <div class="checkbox_wrap">
                         <input type="checkbox" name="services[]" value="baked" id="2-1" />
                         <label for="2-1" class="s_search_btn">自家焙煎</label>

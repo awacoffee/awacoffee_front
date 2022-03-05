@@ -14,6 +14,7 @@
     margin-top: 20px;
     text-align: center;
 }
+
 /* ボタン上margin20px分差し引き */
 .column_page .under_title.inner {
     padding: 40px 0;
@@ -35,11 +36,15 @@
 }
 /* コラム記事タイトル */
 .s_column_title_wrap h1 {
-    /* font-size: calc(20px + 10 * (100vw - 375px) / 725); */
     font-size: clamp(20px, 2.3vw, 30px);
     margin-bottom: 20px;
     text-align: left;
 }
+.s_column_title_wrap {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
 .s_column_title_wrap .tags {
     margin-bottom: 42px;
 }
@@ -47,14 +52,13 @@
     display: inline-block;
 }
 .s_column_title_wrap .tags .tag:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 .s_column_title_wrap .tag::before {
     content: "#";
 }
 .s_column_title_text {
-    margin-bottom: 60px;
     line-height: 1.8;
 }
 
@@ -82,6 +86,7 @@
 .s_column_card {
     margin-bottom: 40px;
 }
+
 .s_column_card:nth-last-child(2) {
     margin-bottom: 100px;
 }
@@ -114,88 +119,13 @@
     }
 }
 
-/* ▼サイドバー▼ */
-/* .column2_aside {
-    font-family: "Shippori Mincho B1", serif;
-}
-.column2_aside .wrap {
-    height: 100%;
-}
-.column2_aside .inner {
-    height: 100%;
-}
-.side_title {
-    margin-bottom: 50px;
-} */
-
-/* h2 */
-/* .side_title {
-    display: block;
-    margin-bottom: 10px;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    font-size: 18px;
-    text-align: left;
-}
-@media (min-width: 768px) {
-    .side_title {
-        font-size: 20px;
-    }
-}
-.side_lists {
-    margin-bottom: 40px;
-}
-.side_lists .list a {
-    display: block;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #542912;
-}
-.side_lists .list {
-    position: relative;
-    font-size: 16px;
-}
-.side_lists .list::after {
-    content: "\f054";
-    position: absolute;
-    top: 35%;
-    right: 1em;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    transition: all 0.5s;
-}
-.side_lists .list:hover:after {
-    transform: translateX(1em);
-} */
-
-/* サイドバー横に出現、順番入れ替え */
-/* @media (min-width: 768px) {
-    .column2_flex {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .column2_article {
-        order: 1;
-        flex-basis: 65%;
-    }
-    .column2_aside {
-        order: 2;
-        flex-basis: 35%;
-    }
-    .recommend {
-        order: 3;
-        flex-basis: 100%;
-    } */
-/* アクセスMAPの下部と揃った状態でsticky終わるよう調整 */
-/* .column2_aside .inner {
-        padding: 200px 25px 100px;
-    }
-} */
+/* ======================================================== */
+/* sotore.css　サイドバー */
+/* コラム個別一覧css　サイドバー */
+/* ======================================================== */
 
 /* サイドバー追従 */
 @media (min-width: 768px) {
-    /* 名前変更 */
     aside {
         display: block;
     }
@@ -205,6 +135,7 @@
         top: 100px;
     }
 }
+
 /* ▼レコメンド▼ */
 section.recommend {
     background-color: #fff;
@@ -220,6 +151,7 @@ section.recommend {
         font-size: 20px;
     }
 }
+
 /* ======================================================== */
 /* card.css */
 /* コラムカード追加分 */
@@ -228,135 +160,6 @@ section.recommend {
 .recommend .column_wrap {
     max-width: 100%;
 }
-/* ▼コラムカード▼ */
-/* .column_img_wrap img {
-    width: 150px;
-    height: 112.5px;
-    object-fit: contain;
-}
-@media (min-width: 768px) {
-    .column_img_wrap img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .card_wrap {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.column_wrap {
-    margin: 0 auto;
-    border-radius: 3px;
-    transition: 0.3s ease-in-out;
-}
-
-.column_wrap:hover {
-    box-shadow: 0 0 15px #542912;
-}
-@media (min-width: 768px) {
-    .column_wrap {
-        box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
-    }
-}
-
-.column_wrap + .column_wrap {
-    margin-top: 20px;
-}
-@media (min-width: 768px) {
-    .column_wrap + .column_wrap {
-        margin: 0 0 0 8%;
-    }
-}
-
-.column_inner {
-    display: flex;
-}
-@media (min-width: 768px) {
-    .column_inner {
-        display: block;
-    }
-}
-
-.column_img_wrap {
-    min-width: 100px;
-    overflow: hidden;
-    border-radius: 3px;
-}
-@media (min-width: 768px) {
-    .column_img_wrap {
-        width: 100%;
-    }
-}
-
-.column_meta {
-    flex-grow: 2;
-    margin-left: 10px;
-    border-bottom: 1px solid #7b850b;
-}
-@media (min-width: 768px) {
-    .column_meta {
-        margin-left: 0;
-        padding: 10px 18px 16px;
-        border-bottom: none;
-    }
-}
-
-.column_meta h3 {
-    margin-bottom: 5px;
-}
-@media (min-width: 768px) {
-    .column_meta h3 {
-        font-size: 20px;
-        border-bottom: 1px solid #7b850b;
-        padding-bottom: 15px;
-        margin-bottom: 8px;
-    }
-}
-
-.column_text {
-    display: none;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-@media (min-width: 768px) {
-    .column_text {
-        display: block;
-    }
-}
-
-.categories {
-    display: inline-block;
-
-    padding: 0.2em 0.5em;
-    font-size: 12px;
-    background-color: #f6f4ef;
-}
-@media (min-width: 768px) {
-    .categories {
-        font-size: 14px;
-    }
-}
-
-.column_date {
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 14px;
-}
-
-.categories_wrap {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-@media (min-width: 768px) {
-    .categories_wrap {
-        margin: 0 0 10px 0;
-    }
-} */
 
 /* ======================================================== */
 /* 検索BOX */
@@ -408,7 +211,7 @@ section.recommend {
     margin-block-end: 1em;
 }
 /* ③枠線 class名を指定 */
-.column_page .s_column_box {
+.column_page .box {
     margin-bottom: 1em;
     padding: 1em;
     border: 1px solid#542912;
@@ -417,11 +220,11 @@ section.recommend {
 .column_page .s_column_thirdtitle {
     position: relative;
     margin-left: 10px;
+    margin-bottom: 10px;
     padding: 0.3em 0.3em 0.3em 0.5em;
+    border-left: #7b850b 7px solid;
     font-family: "Shippori Mincho B1";
     font-size: 18px;
-    border-left: #7b850b 7px solid;
-    margin-bottom: 10px;
     font-weight: bold;
 }
 .column_page .s_column_thirdtitle::after {
@@ -435,11 +238,11 @@ section.recommend {
 /* ⑤写真のキャプションのスタイル */
 figcaption {
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: #707070;
 }
 /* ⑥リンクに下線 */
-.column2_article a:hover {
+.column2_article a {
     color: #4682b4;
 }
 
