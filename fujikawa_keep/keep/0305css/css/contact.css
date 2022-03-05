@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* ======================================================== */
+/* お問い合わせページCSS */
+/* お問い合わせ完了ページCSS */
+/* ======================================================== */
+.contact h2 {
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+    .contact h2 {
+        font-size: 28px;
+    }
+}
+input {
+    display: block;
+}
+textarea {
+    resize: none;
+    width: 100%;
+}
+.contact_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact_message {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Shippori Mincho B1", serif;
+    line-height: 1.5;
+}
+@media (min-width: 768px) {
+    .contact_message {
+        font-size: 16px;
+    }
+}
+
+form {
+    padding: 15px;
+    background-color: #f6f4ef;
+    border-radius: 2px;
+}
+@media (min-width: 768px) {
+    form {
+        padding: 15px 30px;
+    }
+}
+.contact_item {
+    display: block;
+    padding: 15px 15px 15px 0;
+}
+.contact_item span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #e0591e;
+}
+.contact_parts {
+    margin-bottom: 20px;
+}
+.input_area {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #542912;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.attention {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.attention a {
+    text-decoration: underline;
+    color: #e0591e;
+}
+.check_agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check_agree input {
+    margin-right: 10px;
+}
+.search_btn {
+    text-align: center;
+}
+.search_btn_wrap {
+    display: inline-block;
+    margin: 30px 0 10px 0;
+    padding: 20px 70px;
+    color: #fff;
+    background-color: #041526;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 3px;
+    transition: 0.7s;
+}
+.search_btn_wrap input {
+    margin: 0 auto;
+}
+.search_btn_wrap:hover {
+    background-color: #fff;
+    color: #041526;
+}
+.search_btn_wrap:hover.search_btn_wrap::before {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+/* お問い合わせ完了ページ */
+.contact_master {
+    margin: 0 auto;
+    background-image: url(../img/thanks_staff01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 200px;
+    height: 300px;
+}
+@media (min-width: 768px) {
+    .contact_master {
+        width: 400px;
+        height: 500px;
+    }
+}
