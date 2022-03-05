@@ -1,0 +1,49 @@
+/*
+.header_pc_bgc は
+　background-color: inherit;
+　color: white;
+以外は適宜変更してください
+*/
+
+.header_pc_bgc {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+
+  background-color: inherit;
+  color: white;
+}
+
+.bgc_white {
+  color: #542912;
+  background-color: #fff;
+}
+
+.up {
+  animation: upani 0.5s ease forwards;
+}
+@keyframes upani {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
+.down {
+  animation: downani 1s ease forwards;
+}
+@keyframes downani {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* topbutton */
+.none {
+  display: none;
+}
