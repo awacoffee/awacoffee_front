@@ -1,23 +1,22 @@
 /*
-.header_pc_bgc は
-　background-color: inherit;
-　color: white;
-以外は適宜変更してください
+適宜mediaから出すなど変更してください
 */
 @media (min-width: 768px) {
   .header_pc_bgc {
     height: 60px;
     width: 100%;
     position: fixed;
-
     background-color: inherit;
+  }
+  /* navのクラス名わからん */
+  .header_pc_bgc nav {
     color: white;
   }
-}
 
-.bgc_white {
-  color: #542912;
-  background-color: #fff;
+  .bgc_white {
+    color: #542912;
+    background-color: #fff;
+  }
 }
 
 .up {
