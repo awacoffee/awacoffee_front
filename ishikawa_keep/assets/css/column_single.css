@@ -26,7 +26,7 @@
 /* カードスタイル変更 */
 @media (min-width: 768px) {
   .cards_wrap .card_wrap {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -93,86 +93,8 @@
 /*  */
 /* ======================================================== */
 
-.column2_aside {
-  font-family: "Shippori Mincho B1", serif;
-}
-.column2_aside .wrap {
-  height: 100%;
-}
-.column2_aside .inner {
-  height: 100%;
-}
-.side_title {
-  margin-bottom: 50px;
-}
-
-/* h2 */
-.side_title {
-  display: block;
-  margin-bottom: 10px;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  font-size: 18px;
-  text-align: left;
-}
-@media (min-width: 768px) {
-  .side_title {
-    font-size: 20px;
-  }
-}
-.side_lists {
-  margin-bottom: 40px;
-}
-.side_lists .list a {
-  display: block;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #542912;
-}
-.side_lists .list {
-  position: relative;
-  font-size: 16px;
-}
-.side_lists .list::after {
-  content: "\f054";
-  position: absolute;
-  top: 35%;
-  right: 1em;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  transition: all 0.5s;
-}
-.side_lists .list:hover:after {
-  transform: translateX(1em);
-}
-
-/* サイドバー横に出現、順番入れ替え */
-@media (min-width: 768px) {
-  .column2_flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .column2_article {
-    order: 1;
-    flex-basis: 63%;
-  }
-  .column2_aside {
-    order: 2;
-    flex-basis: 35%;
-  }
-  .recommend {
-    order: 3;
-    flex-basis: 100%;
-  }
-  /* アクセスMAPの下部と揃った状態でsticky終わるよう調整 */
-  /* .column2_aside .inner {
-    padding: 200px 25px 100px;
-  } */
-}
 /* サイドバー追従 */
 @media (min-width: 768px) {
-  /* 名前変更 */
   aside {
     display: block;
   }

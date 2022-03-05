@@ -74,16 +74,16 @@
 }
 
 /* サイドバー追従 */
-/* @media (min-width: 768px) {
-    aside {
-        display: block;
-    }
-    .side_scrool {
-        position: sticky;
-        position: -webkit-sticky;
-        top: 100px;
-    }
-} */
+@media (min-width: 768px) {
+  aside {
+    display: block;
+  }
+  .side_scrool {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+  }
+}
 
 /* ===================== ↓more_btn関係 ===================== */
 
