@@ -229,13 +229,14 @@
     height: 100%;
     object-fit: cover;
 }
-dd a:hover {
-    color: #e0591e;
+/* ⑥リンクに下線 */
+.dd a:hover {
+    color: #4682b4;
 }
 dd a:link {
     text-decoration: underline;
+    color: #4682b4;
 }
-
 .recommend_title {
     font-size: 20px;
     text-align: left;
