@@ -1,0 +1,51 @@
+/*
+適宜mediaから出すなど変更してください
+*/
+@media (min-width: 768px) {
+  .header_pc_bgc {
+    /* 使わない */
+    height: 60px;
+    width: 100%;
+    /* 使う */
+    position: fixed;
+    background-color: transparent;
+  }
+  /* 変更？ */
+  .header_pc_bgc {
+    color: white;
+  }
+
+  .bgc_white {
+    color: #542912;
+    background-color: #fff;
+  }
+}
+
+.up {
+  animation: upani 0.5s ease forwards;
+}
+@keyframes upani {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
+.down {
+  animation: downani 1s ease forwards;
+}
+@keyframes downani {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* topbutton */
+.none {
+  display: none;
+}
