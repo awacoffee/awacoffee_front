@@ -77,5 +77,12 @@
     </div>
   </div>
 </main>
+<div class="scroll_anime">
+            <div id="top_to_button" class="js-pagetop scroll-top none">
+                <div class="arrow"></div>
+                <p>Page Top</p>
+            </div>
+        </div>
+        <!-- ページ上部へ戻る -->
 
 <?php get_footer(); ?>
