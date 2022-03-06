@@ -46,6 +46,7 @@ if (isset($_POST['favoritepageid'])) {
 <?php get_header(); ?>
 
 <main>
+<div class="header_img_bg"></div>
     <!-- ▼タイトルエリア▼ -->
     <div class="wrap">
         <div class="under_title inner">

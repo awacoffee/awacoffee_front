@@ -2,7 +2,7 @@
 
 
 <main class="column_page" id="column_under">
-
+<div class="header_img_bg"></div>
     <!-- ▼タイトルエリア▼ -->
     <div class="wrap">
         <div class="under_title inner">

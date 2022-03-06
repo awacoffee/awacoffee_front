@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main id="news_single_under">
+<div class="header_img_bg"></div>
   <!-- ▼タイトルエリア▼ -->
   <div class="wrap">
     <div class="under_title inner">

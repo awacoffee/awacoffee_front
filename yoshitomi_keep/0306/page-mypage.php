@@ -11,6 +11,7 @@ $favoritepagelist = explode(',', $favoritepagelist);
 <?php get_header(); ?>
 
 <main id="mypage_under">
+<div class="header_img_bg"></div>
   <!-- ▼タイトルエリア▼ -->
   <div class="wrap">
     <div class="under_title inner">

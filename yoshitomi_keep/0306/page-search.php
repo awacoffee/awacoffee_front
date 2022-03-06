@@ -2,6 +2,7 @@
 
 
 <main>
+<div class="header_img_bg"></div>
     <!-- ▼ページのタイトル▼ -->
     <div class="wrap mainvisual_wrap">
         <div class="under_title inner">
