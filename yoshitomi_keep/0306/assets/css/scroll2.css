@@ -1,0 +1,113 @@
+/*スクロールリンクの形状*/
+.scroll-top {
+    right: 20px;
+    bottom: 10px;
+    z-index: 2;
+    position: fixed;
+
+    /*縦書き*/
+    writing-mode: vertical-rl;
+
+    /*改行禁止*/
+    white-space: nowrap;
+
+    /*矢印の動き*/
+    animation: arrowmove 0.5s ease-in-out infinite;
+
+    /*それぞれに0.5秒の変化のアニメーション*/
+    transition: opacity .5s, visibility .5s; 
+}
+
+@keyframes arrowmove{
+    0%{bottom:20px;}
+    50%{bottom:25px;}
+   100%{bottom:20px;}
+}
+
+.scroll-top p{
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+}
+
+.js-scroll .arrow::after{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    width:1px;
+    height: 50px;
+    background:#666;
+}
+
+.js-scroll .arrow::before {
+    content: "";
+      position: absolute;
+      top: 30px;
+      right: -6px;
+      width: 1px;
+      height: 20px;
+      background: #666;
+      transform: skewX(-31deg);
+}
+
+.js-pagetop .arrow::after {
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    width:1px;
+    height: 50px;
+    background:#666;
+}
+
+.js-pagetop .arrow::before {
+    content: "";
+      position: absolute;
+      top: 0;
+      right: -6px;
+      width: 1px;
+      height: 20px;
+      background: #666;
+      transform: skewX(31deg);
+}
+
+
+* {
+    margin: 0;
+}
+
+.header {
+    height: 100px;
+    background:#6666;
+}
+.Area1 {
+    height: 300px;
+    background: #fff;
+}
+
+.Area2 {
+    height: 300px;
+    background: #6666;
+}
+
+.Area3 {
+    height: 300px;
+    background: #fff;
+}
+
+.Area4 {
+    height: 300px;
+    background: #6666;
+}
+
+.footer {
+    height: 100px;
+    background: #fff;
+}
+
+.js-pagetop:hover {
+    opacity: 0.5;
+}
