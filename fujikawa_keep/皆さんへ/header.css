@@ -8,8 +8,8 @@
     position: fixed;
     background-color: inherit;
   }
-  /* navのクラス名わからん */
-  .header_pc_bgc nav {
+  /* クラス名??? */
+  .header_pc_bgc nav ul li {
     color: white;
   }
 
