@@ -1,0 +1,365 @@
+@charset "utf-8";
+/* ======================================================== */
+/* 条件検索CSS */
+
+/* ======================================================== */
+
+.search_content {
+    max-width: 877px;
+    margin: 0 auto;
+}
+.search_content section {
+    margin-bottom: 80px;
+    background-color: #fff;
+}
+
+.search_content label {
+    background-color: #fff;
+}
+.map_wrap {
+    text-align: center;
+}
+.map_svg {
+    position: relative;
+    display: inline-block;
+}
+/* 左よこ縦棒 */
+.search_title {
+    padding: 5px 5px 5px 10px;
+    font-family: "Shippori Mincho B1";
+    font-size: 15px;
+    border-left: #7b850b 5px solid;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .search_content section {
+        margin-bottom: 40px;
+    }
+    .rasio_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 39px;
+    }
+    .map_svg {
+        width: 50%;
+    }
+}
+input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    overflow: hidden;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+}
+input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    overflow: hidden;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+}
+input[type="submit"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    overflow: hidden;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+}
+input[type="reset"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    overflow: hidden;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+}
+.s_search_radios {
+    position: absolute;
+    font-size: 15px;
+    display: flex; /* ブロックレベル要素化する */
+    align-items: center;
+    padding: 8px 15px 8px 15px;
+    color: #542912; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+    border: 2px solid #542912; /* ボックスの境界線を実線で指定する */
+    border-radius: 23px; /* 角丸を指定する */
+}
+
+.s_search_radios::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 1px solid #434f5c;
+}
+.s_search_radios::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    background-color: #434f5c;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.s_search_radios:hover {
+    background-color: #e2edf9; /* マウスオーバー時の背景色を指定する */
+}
+
+.area_1 {
+    top: 25%;
+    right: -16px;
+}
+/* 文字数が多いため */
+.area_1::before {
+    margin-right: 10px;
+}
+.area_2 {
+    top: 0;
+    left: 50%;
+}
+.area_3 {
+    top: 25%;
+    left: 16px;
+}
+.area_4 {
+    bottom: 20%;
+    left: 50%;
+}
+input[type="radio"]:checked + .s_search_radios::after {
+    opacity: 1; /* 要素を表示する */
+}
+/* ここから目的別 */
+.s_search_btn {
+    height: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    display: flex; /* ブロックレベル要素化する */
+    align-items: center;
+    padding: 8px 15px 8px 15px;
+    color: #542912; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+    border: 2px solid #542912; /* ボックスの境界線を実線で指定する */
+    border-radius: 3px; /* 角丸を指定する */
+}
+
+.s_search_btn::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 1px solid #434f5c;
+}
+.s_search_btn::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    background-color: #434f5c;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.s_search_btn:hover {
+    background-color: #e2edf9; /* マウスオーバー時の背景色を指定する */
+}
+
+@media (min-width: 768px) {
+    .search_title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .area_map_wrap .search_title {
+        margin-bottom: 10px;
+    }
+    .s_search_radios {
+        font-size: 20px;
+        padding: 8px 30px 8px 30px;
+    }
+    .s_search_radios::before {
+        width: 25px;
+        height: 25px;
+    }
+    .s_search_radios::after {
+        width: 16px;
+        height: 16px;
+        left: 35px;
+    }
+}
+
+.checkbox_wrap .s_search_btn::before {
+    border-radius: 3px;
+}
+.checkbox_wrap .s_search_btn::after {
+    width: 5px; /* ボックスの横幅を指定する */
+    height: 9px; /* ボックスの高さを指定する */
+    top: 37%;
+    left: 20px;
+    border-right: 3px solid #434f5c; /* 境界線（右）のスタイルを指定する */
+    border-bottom: 3px solid #434f5c; /* 境界線（下）のスタイルを指定する */
+    transform: rotate(45deg); /* 要素を回転させる */
+    background-color: #fff;
+    border-radius: 1px;
+    opacity: 0;
+}
+
+/* チェック時現れる */
+input[type="radio"]:checked + .s_search_btn::after {
+    opacity: 1; /* 要素を表示する */
+}
+input[type="checkbox"]:checked + .s_search_btn::after {
+    opacity: 1; /* 要素を表示する */
+}
+
+/* ここからチェックボックスor2カラム */
+@media (min-width: 768px) {
+    .checkbox_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0 39px;
+    }
+}
+/* フォーカスが当たると楕円の色などを変える。 */
+.search_content input:focus + label {
+    background-color: #e2edf9;
+}
+
+/* ここから送信検索ボタン */
+/* コンタクトcotact.htmlにも使っている */
+.search_btn_wrap {
+    max-width: 877px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.search_btn_inner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+    .search_btn_inner {
+        margin-bottom: 0;
+    }
+}
+.search_btn_wrap svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 45px;
+    transform: translate(0, -50%);
+    opacity: 0.7;
+}
+
+.search_btn {
+    position: relative;
+    font-size: 15px;
+    display: block;
+    width: 180px;
+    height: 60px;
+    padding: 0 0 0 40px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    /* opacity: 0.7; */
+    z-index: 1;
+    transition: 1s;
+    /* background-color: #041526; */
+}
+
+.search_btn::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #041526;
+    z-index: -1;
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.35);
+    transition: background-color 1s;
+}
+.musimegane {
+    fill: #fff;
+    transition: all 1s;
+}
+
+.search_btn:hover {
+    color: #041526;
+}
+.search_btn:hover .musimegane {
+    fill: #041526;
+}
+.search_btn:hover.search_btn:hover.search_btn::before {
+    background-color: #fff;
+}
+
+.search_btn_inner input:focus + label {
+    color: #041526;
+}
+.search_btn_inner input:focus + label .musimegane {
+    fill: #041526;
+}
+.search_btn_inner input:focus + label::before {
+    background-color: #fff;
+}
+
+/* ここからリセットボタン */
+.reset_btn_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.reset_button {
+    display: inline-block;
+    /* height: 30px; */
+    padding: 8px 15px 8px 15px;
+    font-size: 15px;
+    align-items: center;
+    /* line-height: 15px; */
+    color: #707070; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    border: 2px solid #707070; /* ボックスの境界線を実線で指定する */
+    border-radius: 3px; /* 角丸を指定する */
+}
+@media (min-width: 768px) {
+    .reset_btn_wrap {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+#reset_btn:focus + label {
+    background-color: #ccc;
+}
+.reset_button:hover {
+    background-color: #ccc;
+}
