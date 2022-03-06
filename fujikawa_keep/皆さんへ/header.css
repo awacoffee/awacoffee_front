@@ -3,13 +3,15 @@
 */
 @media (min-width: 768px) {
   .header_pc_bgc {
+    /* 使わない */
     height: 60px;
     width: 100%;
+    /* 使う */
     position: fixed;
-    background-color: inherit;
+    background-color: transparent;
   }
-  /* クラス名??? */
-  .header_pc_bgc nav ul li {
+  /* 変更？ */
+  .header_pc_bgc {
     color: white;
   }
 

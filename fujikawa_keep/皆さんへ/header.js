@@ -10,10 +10,9 @@ $(function () {
   var footer_h = $("#footer_wrap").offset().top;
   $(window).scroll(function headerfun() {
     var scr = $(this).scrollTop();
-    // 5分の1は適当
     if (scr > footer_h - header_h / 2) {
       $(".header_pc_bgc").addClass("none");
-    } else if (scr > mainv_h - header_h / 5) {
+    } else if (scr > mainv_h - header_h) {
       $(".header_pc_bgc").removeClass("none");
       $(".header_pc_bgc").addClass("bgc_white");
       if (scr < before_scr) {
