@@ -8,12 +8,12 @@
 /* 下層のタイトルエリア */
 /* ハンバーガーメニュー */
 /* ドロワーメニュー */
+/* storeカード */
+/* columnカード */
+/* aside */
 /* ボタンとその動き */
 /* フッター */
 
-/* 今後入れいていく*/
-/* カード */
-/* カード */
 /* ======================================================== */
 
 body {
@@ -52,7 +52,7 @@ h3 {
   letter-spacing: "";
   line-height: "";
 }
-/* p を.title_sub にしても良い*/
+
 .wrap_title p {
   color: #7b850b;
   font-family: rollerscript-rough, sans-serif;
@@ -68,15 +68,19 @@ iframe {
   max-width: 100%;
 }
 
-/* fuji */
 a {
   cursor: pointer;
 }
-a img {
-  transition: 0.3s ease-in-out;
-}
-a img:hover {
+
+a :hover img {
   transform: scale(1.05);
+}
+
+/* fuji button追加は不具合あるか */
+a img,
+article,
+button {
+  transition: 0.3s ease-in-out;
 }
 
 .wrap {
@@ -86,14 +90,13 @@ a img:hover {
   padding: 40px 20px 60px;
 }
 
-/* 背景ベージュ用 */
 section:nth-of-type(even) {
   background-color: #f6f4ef;
 }
 .wrap_title {
   margin-bottom: 60px;
 }
-/* 2.22 PC版に設定 */
+
 .wrap_text {
   margin-bottom: 40px;
   text-align: center;
@@ -378,13 +381,362 @@ section:nth-of-type(even) {
   padding-bottom: 50px;
 }
 /* ======================================================= */
+/* store_card */
+.sp_stores_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .sp_stores_cards {
+    display: none;
+  }
+}
+.sp_stores_cards::after {
+  display: block;
+  content: "";
+  flex-basis: calc((100% - 3%) / 2);
+}
+.sp_stores_cards .stores_card {
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  flex-basis: calc((100% - 3%) / 2);
+}
+.sp_stores_cards .stores_card:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.sp_stores_cards .text_inner {
+  width: 90%;
+  margin: 8px auto;
+}
+.sp_stores_cards .stores_name {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.sp_stores_cards .stores_catch {
+  margin-bottom: 16px;
+  min-height: 60px;
+  font-size: 14px;
+  border-bottom: solid 1px #542912;
+}
+
+.pc_stores_cards {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  max-width: 1100px;
+}
+@media (min-width: 768px) {
+  .pc_stores_cards {
+    display: flex;
+  }
+  .pc_stores_cards::after {
+    display: block;
+    content: "";
+    width: 31%;
+    max-width: 280px;
+  }
+}
+
+.pc_stores_cards .stores_card {
+  position: relative;
+  width: 31%;
+  max-width: 280px;
+}
+
+.pc_stores_cards .stores_card {
+  margin-bottom: 20px;
+}
+.pc_stores_cards .stores_card:nth-last-of-type(-n + 3) {
+  margin-bottom: 0;
+}
+.pc_stores_cards .front_card {
+  position: absolute;
+  z-index: 10;
+}
+
+.pc_stores_cards .stores_img {
+  position: relative;
+  width: 95%;
+  height: auto;
+}
+
+.pc_stores_cards .text_inner {
+  width: 95%;
+  padding: 8px;
+  border-radius: 0 0 5px 5px;
+  background-color: #041526;
+  transform: translate(100% 0);
+}
+
+.pc_stores_cards .stores_name {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 16px;
+}
+
+.pc_stores_cards .stores_catch {
+  color: #fff;
+  font-size: 14px;
+}
+
+.pc_stores_cards .back_card {
+  position: relative;
+  margin: 2rem -10px 10px;
+  width: 95%;
+  left: 16px;
+  background-color: #fff;
+  padding: 90% 20px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.sp_stores_cards figure,
+.pc_stores_cards figure {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.stores_card:hover img {
+  transform: scale(1.05);
+}
+/* .stores_card:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+} */
+
+/* ======================================================= */
+/* column_card */
+
+@media (min-width: 768px) {
+  .card_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 30px;
+  }
+}
+
+.column_wrap {
+  margin: 0 auto;
+  border-radius: 3px;
+  /* transition: 0.3s ease-in-out; */
+}
+
+.column_wrap:hover {
+  box-shadow: 0 0 15px #542912;
+}
+@media (min-width: 768px) {
+  .column_wrap {
+    margin: 0 auto;
+    max-width: 280px;
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
+  }
+}
+.column_wrap + .column_wrap {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .column_wrap + .column_wrap {
+    margin-top: 0;
+  }
+}
+
+.column_inner {
+  position: relative;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .column_inner {
+    display: block;
+  }
+}
+.column_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.column_img_wrap {
+  min-width: 100px;
+  /* flex-basis: 35%; */
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  .column_img_wrap {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+  }
+}
+.column_img_wrap img {
+  width: 150px;
+  height: 112.5px;
+  /* height: 100%; */
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .column_img_wrap img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.column_meta {
+  flex-basis: 65%;
+  margin-left: 10px;
+  border-bottom: 1px solid #7b850b;
+}
+@media (min-width: 768px) {
+  .column_meta {
+    margin-left: 0;
+    padding: 10px 18px 16px;
+    border-bottom: none;
+  }
+}
+.categories_wrap {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .categories_wrap {
+    margin: 0 0 10px 0;
+  }
+}
+
+.column_date {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.categories {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  font-size: 12px;
+  background-color: #f6f4ef;
+}
+@media (min-width: 768px) {
+  .categories {
+    font-size: 14px;
+  }
+}
+
+.column_meta h3 {
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .column_meta h3 {
+    font-size: 20px;
+    border-bottom: 1px solid #7b850b;
+    padding-bottom: 15px;
+    margin-bottom: 8px;
+  }
+}
+
+.column_text {
+  display: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .column_text {
+    display: block;
+  }
+}
+
+/* ======================================================= */
+/* ▼サイドバー▼ */
+.column2_aside {
+  font-family: "Shippori Mincho B1", serif;
+}
+.column2_aside .wrap {
+  height: 100%;
+}
+.column2_aside .inner {
+  height: 100%;
+}
+.side_title {
+  margin-bottom: 50px;
+}
+
+/* h2 */
+.side_title {
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 18px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .side_title {
+    font-size: 20px;
+  }
+}
+.side_lists {
+  margin-bottom: 40px;
+}
+.side_lists .list a {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #542912;
+}
+.side_lists .list {
+  position: relative;
+  font-size: 16px;
+}
+.side_lists .list::after {
+  content: "\f054";
+  position: absolute;
+  top: 35%;
+  right: 1em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transition: all 0.5s;
+}
+.side_lists .list:hover:after {
+  transform: translateX(1em);
+}
+/* サイドバー横に出現、順番入れ替え */
+@media (min-width: 768px) {
+  .column2_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .column2_article {
+    order: 1;
+    flex-basis: 65%;
+  }
+  .column2_aside {
+    order: 2;
+    flex-basis: 35%;
+  }
+  .recommend {
+    order: 3;
+    flex-basis: 100%;
+  }
+  /* アクセスMAPの下部と揃った状態でsticky終わるよう調整 */
+  #news_single_under .column2_aside .inner {
+    padding: 160px 25px 100px;
+  }
+}
+/* ======================================================= */
 /* btn*/
-/* 2.27btn更新 */
 .btn_wrap {
   margin: 40px auto 0;
   max-width: 220px;
 }
-/* fuji */
+
 .btn_link {
   display: block;
   width: 100%;
@@ -392,19 +744,13 @@ section:nth-of-type(even) {
   background-color: #041526;
   border-radius: 3px;
   text-align: center;
-  /* opacity: 0.7; */
   font-family: "Shippori Mincho B1", serif;
-  /* transition: 1s ease-in-out; */
-  /* 前田さん希望 */
   transition: 0.3s ease-in-out;
   color: #fff;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.35);
 }
-.btn_link span {
-  /* color: #fff; */
-}
+
 .btn_link:hover {
-  /* opacity: 1; */
   background-color: #fff;
   color: #041526;
 }
