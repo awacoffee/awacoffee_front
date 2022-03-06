@@ -56,7 +56,19 @@
     </div>
     <!-- footer_wrap -->
 </footer>
-
+<div class="scroll_anime">
+            <!-- ↓ -->
+            <div class="js-scroll scroll-top scroll-view">
+                <div class="arrow"></div>
+                <p>Scroll</p>
+            </div>
+            <!-- ↑ -->
+            <div id="top_to_button" class="js-pagetop scroll-top none">
+                <div class="arrow"></div>
+                <p>Page Top</p>
+            </div>
+        </div>
+        
 <?php wp_footer(); ?>
 </body>
 
