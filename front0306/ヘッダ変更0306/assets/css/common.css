@@ -279,14 +279,13 @@ section:nth-of-type(even) {
 }
 
 @media (min-width: 768px) {
-  .header_inner_bg {
-    /* 使わない */
+  /* .header_inner_bg {
+
     height: 60px;
     width: 100%;
-    /* 使う */
     position: fixed;
-    /* background-color: transparent; */
-  }
+    background-color: transparent;
+  } */
   /* 変更？ */
   .header_inner_bg {
     /* color: white; */
@@ -294,7 +293,6 @@ section:nth-of-type(even) {
 
   .bgc_white {
     background-color: #fff;
-    color: #542912;
   }
   .cha_col {
     color: #542912;
