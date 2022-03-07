@@ -1,14 +1,25 @@
-"use-strict";
+// ===ハンバーガーメニュー 表示切り替え=====================================
+$(function () {
+  $(".header_wrap_box_nav").click(function () {
+    $(this).children().toggleClass("active");
+    if ($(".header_wrap_box_nav_line").hasClass("active")) {
+      $(".drower").addClass("visible");
+      scrollpos = $(window).scrollTop();
+      $("body").addClass("fixed").css({ top: -scrollpos });
+    } else {
+      $(".drower").removeClass("visible");
+      $("body").removeClass("fixed").css({ top: 0 });
+      window.scrollTo(0, scrollpos);
+    }
+  });
+});
 
 //  ===header_scroll=========================================================
-
 $(function () {
   let before_scr = 0;
-  // $(window).on("load resize", function () {
   var header_h = $(".header_inner_bg").outerHeight();
   var mainv_h = $(".mainvisual_wrap").outerHeight();
   var footer_h = $("#footer_wrap").offset().top;
-
   $(window).scroll(function headerfun() {
     var scr = $(this).scrollTop();
     if (scr > footer_h - header_h / 2) {
@@ -31,7 +42,6 @@ $(function () {
     before_scr = $(this).scrollTop();
   });
 });
-// });
 
 //  ===topbutton=========================================================
 $(function () {
