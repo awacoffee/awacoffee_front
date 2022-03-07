@@ -570,9 +570,9 @@ section:nth-of-type(even) {
 .stores_card:hover img {
   transform: scale(1.05);
 }
-/* .stores_card:hover {
+.stores_card:hover .back_card {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-} */
+}
 
 /* ======================================================= */
 /* column_card */
@@ -943,13 +943,13 @@ footer a:hover::after {
 
 @keyframes arrowmove {
   0% {
-    bottom: 20px;
+    bottom: 60px;
   }
   50% {
-    bottom: 25px;
+    bottom: 65px;
   }
   100% {
-    bottom: 20px;
+    bottom: 60px;
   }
 }
 
