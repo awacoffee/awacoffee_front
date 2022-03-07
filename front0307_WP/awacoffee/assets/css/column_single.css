@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* ======================================================== */
+/* コラムsingleページCSS */
+
+/* ======================================================== */
+.header_img_bg {
+    background-image: url(../img/under_news_column.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* 見出しのCSS */
+.column_cate {
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    font-family: "Shippori Mincho B1";
+    font-size: 15px;
+    border-left: #7b850b 5px solid;
+}
+@media (min-width: 768px) {
+    .column_cate {
+        margin-bottom: 20px;
+        padding: 5px 5px 5px 10px;
+        font-family: "Shippori Mincho B1";
+        font-size: 24px;
+        border-left: #7b850b 5px solid;
+    }
+}
+
+/* カードスタイル変更 */
+@media (min-width: 768px) {
+    .cards_wrap .card_wrap {
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* ここからページネーションです */
+
+.pagination_wrap {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.pagination li {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px #ccc solid;
+    color: #000053;
+    border-radius: 5px / 5px;
+}
+
+.pagination .pagination_1 {
+    background-color: #777;
+    color: #fff;
+}
+
+/* ここからcolumn.cssコラム詳細を流用したところ */
+
+/* ======================================================== */
+/* コラム詳細記事CSS */
+
+/* ======================================================== */
+
+/* ジャンプ先がヘッダーにかからない高さになるように調整 */
+#search_box {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+.search_jump_box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ボタン上margin20px分差し引き */
+.column_page .under_title.inner {
+    padding: 40px 0;
+}
+@media (min-width: 768px) {
+    .search_jump_box {
+        display: none;
+    }
+    .column_page .under_title.inner {
+        padding: 100px 0;
+    }
+}
+.search_jump_btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #542912;
+    border-radius: 2px;
+    color: #fff;
+}
+
+/* ======================================================== */ /* ▼サイドバー▼ */
+/* store.css　と　column.css　と　column_single.css
+　にも使っている？*/
+/*  */
+/* ======================================================== */
+
+/* サイドバー追従 */
+@media (min-width: 768px) {
+    aside {
+        display: block;
+    }
+    .side_scrool {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 100px;
+    }
+}
+/* ▼レコメンド▼ */
+section.recommend {
+    background-color: #fff;
+}
+.recommend_title {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+@media (min-width: 768px) {
+    .recommend_title {
+        text-align: left;
+        font-size: 20px;
+    }
+}
+
+/* =======================================================
+/*  */ /* 検索BOXは */
+/* ======================================================== */
+
+.column_search {
+    margin-bottom: 40px;
+}
+.search_container {
+    display: flex;
+}
+.search_container input[type="text"] {
+    border: 1px solid #542912;
+    padding: 3px 5px;
+    border-radius: 2px;
+    height: 2em;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.search_container input[type="submit"] {
+    margin-left: 10px;
+    flex-basis: 20%;
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    color: #542912;
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .search_container input[type="text"] {
+        flex-basis: 70%;
+    }
+    .search_container input[type="submit"] {
+        flex-basis: 20%;
+    }
+}
+
+/* コラム用／投稿画面とリンクさせたスタイル */
+/* ①太字かつ文字色 */
+.column_page strong {
+    color: #e0591e;
+}
+/* ②リストのスタイル.user agent stylesheetを基本に調整 */
+.column_page .s_column_text {
+    display: block;
+    list-style: disc inside none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+/* ③枠線 class名を指定 */
+.column_page .box {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid#542912;
+}
+/* ④h3のスタイルを設定 */
+.column_page .s_column_card h3 {
+    position: relative;
+    margin-left: 10px;
+    padding: 0.3em 0.3em 0.3em 0.5em;
+    font-family: "Shippori Mincho B1";
+    font-size: 16px;
+    border-left: #7b850b 7px solid;
+    margin-bottom: 10px;
+}
+.column_page .s_column_card h3::after {
+    position: absolute;
+    content: "";
+    left: -13px;
+    bottom: -6px;
+    width: 100%;
+    border-bottom: 1px solid #7b850b;
+}
+/* ⑤写真のキャプションのスタイル */
+figcaption {
+    margin-bottom: 20px;
+    font-size: 14px;
+}

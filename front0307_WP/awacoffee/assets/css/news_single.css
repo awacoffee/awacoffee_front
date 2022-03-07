@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* ======================================================== */
+/* ニュース個別記事 */
+
+/* ======================================================== */
+.header_img_bg {
+    background-image: url(../img/under_news_column.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.news_page_level1_heading {
+    margin-bottom: 20px;
+    font-size: clamp(20px, 2.3vw, 30px);
+    text-align: left;
+}
+@media (min-width: 768px) {
+    .news_page_level1_heading {
+        margin-bottom: 50px;
+    }
+}
+/* 左よこ縦棒 */
+/* h2 */
+/* コラムで使用しているh2のクラスメイト一緒にする */
+.s_column_subtitle {
+    padding: 5px 5px 5px 10px;
+    font-family: "Shippori Mincho B1";
+    font-size: 18px;
+    border-left: #7b850b 7px solid;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    text-align: left;
+}
+@media (min-width: 768px) {
+    .s_column_subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+.news_page_post_meta {
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .news_page_post_meta {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+}
+.news_page_post_date {
+    margin-bottom: 5px;
+}
+.news_page_post_category_wrap {
+    display: flex;
+    margin-bottom: 30px;
+}
+.news_page_post_category_news a {
+    display: block;
+    margin-right: 10px;
+    padding: 0.3em 0.5em;
+    background-color: #fff;
+    border: 1px solid currentColor;
+    color: #542912;
+}
+.news_page_post_category_update a {
+    display: block;
+    margin-right: 10px;
+    padding: 0.3em 0.5em;
+    background-color: #542912;
+    border: 1px solid #542912;
+    color: #fff;
+}
+.news_page_text_wrap {
+    margin-bottom: 30px;
+}
+.news_page_text {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.8;
+}
+@media (min-width: 768px) {
+    .news_page_text_wrap {
+        margin-bottom: 80px;
+        padding: 15px;
+    }
+    .news_page_text {
+        font-size: 16px;
+    }
+}
+
+/* ▼ページナビゲーション▼ */
+.news_page_navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.news_page_prev a,
+.news_page_next a {
+    display: block;
+    padding: 0.8em;
+}
+@media (min-width: 768px) {
+    .news_page_prev a,
+    .news_page_next a {
+        font-size: 16px;
+    }
+}
+.news_page_text_wrap a,
+.news_page_navigation a {
+    color: #4682b4;
+}
+.news_page_text_wrap a:link,
+.news_page_navigation a:link {
+    text-decoration: underline;
+    color: #4682b4;
+}
+/* サイドバー追従 */
+@media (min-width: 768px) {
+    aside {
+        display: block;
+    }
+    .side_scrool {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 100px;
+    }
+}
+
+/* 新着ニュース投稿用css／コラム用と同じクラス名にする／投稿画面とリンクさせたスタイル */
+/* ①太字かつ文字色 */
+.column_page strong {
+    color: #e0591e;
+}
+/* ②リストのスタイル.user agent stylesheetを基本に調整 */
+.column_page .s_column_text {
+    display: block;
+    list-style: disc inside none;
+    margin-block-end: 1em;
+}
+/* ③枠線 class名を指定 */
+.column_page .box {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid#542912;
+}
+/* ④h3のスタイルを設定 */
+.column_page .s_column_thirdtitle {
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0.3em 0.3em 0.3em 0.5em;
+    border-left: #7b850b 7px solid;
+    font-family: "Shippori Mincho B1";
+    font-size: 18px;
+    font-weight: bold;
+}
+.column_page .s_column_thirdtitle::after {
+    position: absolute;
+    content: "";
+    left: -13px;
+    bottom: -6px;
+    width: 100%;
+    border-bottom: 1px solid #7b850b;
+}
+/* ⑤写真のキャプションのスタイル */
+figcaption {
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #707070;
+}
+@media (min-width: 768px) {
+    figcaption {
+        font-size: 14px;
+    }
+}

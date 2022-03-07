@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* ======================================================== */
+/* コラム詳細記事CSS */
+
+/* ======================================================== */
+
+.header_img_bg {
+    background-image: url(../img/under_news_column.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* SP版はコラム記事キーワード検索フォームに飛ぶ */
+/* ジャンプ先がヘッダーにかからない高さになるように調整 */
+#search_box {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+.search_jump_box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ボタン上margin20px分差し引き */
+.column_page .under_title.inner {
+    padding: 40px 0;
+}
+@media (min-width: 768px) {
+    .search_jump_box {
+        display: none;
+    }
+    .column_page .under_title.inner {
+        padding: 100px 0;
+    }
+}
+.search_jump_btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #542912;
+    border-radius: 2px;
+    color: #fff;
+}
+/* コラム記事タイトル */
+.s_column_title_wrap h1 {
+    font-size: clamp(20px, 2.3vw, 30px);
+    margin-bottom: 20px;
+    text-align: left;
+}
+.s_column_title_wrap {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.s_column_title_wrap .tags {
+    margin-bottom: 42px;
+}
+.s_column_title_wrap .tags .tag {
+    display: inline-block;
+}
+.s_column_title_wrap .tags .tag:not(:last-child) {
+    margin-right: 1em;
+}
+
+.s_column_title_wrap .tag::before {
+    content: "#";
+}
+.s_column_title_text {
+    line-height: 1.8;
+}
+
+/* コラム本文 */
+.s_column_cards {
+    max-width: 690px;
+    margin: 0 20px;
+}
+/* 左よこ縦棒 */
+/* h2 */
+.s_column_subtitle {
+    padding: 5px 5px 5px 10px;
+    font-family: "Shippori Mincho B1";
+    font-size: 18px;
+    border-left: #7b850b 7px solid;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    text-align: left;
+}
+@media (min-width: 768px) {
+    .s_column_subtitle {
+        font-size: 20px;
+    }
+}
+.s_column_card {
+    margin-bottom: 40px;
+}
+
+.s_column_card:nth-last-child(2) {
+    margin-bottom: 100px;
+}
+.s_column_img {
+    width: 100%;
+    padding-top: 75%;
+    position: relative;
+    margin-bottom: 5px;
+}
+.s_column_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+.s_column_text {
+    padding: 0 1em;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.8;
+}
+@media (min-width: 768px) {
+    .s_column_cards {
+        margin-bottom: 200px;
+    }
+    .s_column_text {
+        font-size: 16px;
+    }
+}
+
+/* ======================================================== */
+/* sotore.css　サイドバー */
+/* コラム個別一覧css　サイドバー */
+/* ======================================================== */
+
+/* サイドバー追従 */
+@media (min-width: 768px) {
+    aside {
+        display: block;
+    }
+    .side_scrool {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 100px;
+    }
+}
+
+/* ▼レコメンド▼ */
+section.recommend {
+    background-color: #fff;
+}
+.recommend_title {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+@media (min-width: 768px) {
+    .recommend_title {
+        text-align: left;
+        font-size: 20px;
+    }
+}
+
+/* ======================================================== */
+/* card.css */
+/* コラムカード追加分 */
+/* 追加分 */
+/* ======================================================== */
+.recommend .column_wrap {
+    max-width: 100%;
+}
+
+/* ======================================================== */
+/* 検索BOX */
+/* ======================================================== */
+
+.column_search {
+    margin-bottom: 40px;
+}
+.search_container {
+    display: flex;
+}
+.search_container input[type="text"] {
+    border: 1px solid #542912;
+    padding: 3px 5px;
+    border-radius: 2px;
+    height: 2em;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.search_container input[type="submit"] {
+    margin-left: 10px;
+    flex-basis: 20%;
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    color: #542912;
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .search_container input[type="text"] {
+        flex-basis: 70%;
+    }
+    .search_container input[type="submit"] {
+        flex-basis: 20%;
+    }
+}
+
+/* コラム用／投稿画面とリンクさせたスタイル */
+/* ①太字かつ文字色 */
+.column_page strong {
+    color: #e0591e;
+}
+/* ②リストのスタイル.user agent stylesheetを基本に調整 */
+.column_page .s_column_text {
+    display: block;
+    list-style: disc inside none;
+    margin-block-end: 1em;
+}
+/* ③枠線 class名を指定 */
+.column_page .box {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid#542912;
+}
+/* ④h3のスタイルを設定 */
+.column_page .s_column_thirdtitle {
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0.3em 0.3em 0.3em 0.5em;
+    border-left: #7b850b 7px solid;
+    font-family: "Shippori Mincho B1";
+    font-size: 18px;
+    font-weight: bold;
+}
+.column_page .s_column_thirdtitle::after {
+    position: absolute;
+    content: "";
+    left: -13px;
+    bottom: -6px;
+    width: 100%;
+    border-bottom: 1px solid #7b850b;
+}
+/* ⑤写真のキャプションのスタイル */
+figcaption {
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #707070;
+}
+@media (min-width: 768px) {
+    figcaption {
+        font-size: 14px;
+    }
+}
+
+/* ⑥リンクに下線 */
+.column2_article a {
+    color: #4682b4;
+}
+
+.column2_article a:link {
+    text-decoration: underline;
+    color: #4682b4;
+}
