@@ -1,0 +1,110 @@
+/* ======================================================== */
+/* コラム一覧全部だしCSS column_list.css*/
+/* ======================================================== */
+
+.text_btns ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .text_btns ul {
+    flex-grow: 1;
+    /* justify-content: right; */
+    justify-content: left;
+  }
+}
+.text_btns li {
+  padding: 0 20px;
+}
+.text_btns li h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 16px;
+}
+
+.column_item_btn::after {
+  display: block;
+  position: relative;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.column_item_btn:hover:after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .text_btns li h2 {
+    font-size: 20px;
+  }
+}
+.text_btns li + li {
+  border-left: 1px solid #333;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .text_btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column_tab_wrap {
+    width: 50%;
+    /* transform: translateX(25%); */
+  }
+}
+
+/* ======================================================== */
+/*
+/* 検索BOX */
+/* ======================================================== */
+
+.column_search {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .column_search {
+    display: flex;
+    justify-content: end;
+  }
+}
+.search_container {
+  display: flex;
+  justify-content: center;
+}
+.search_container input[type="text"] {
+  border: 1px solid #542912;
+  padding: 3px 5px;
+  border-radius: 2px;
+  height: 2em;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.search_container input[type="submit"] {
+  margin-left: 10px;
+  /* flex-basis: 20%; */
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  color: #542912;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .search_container input[type="text"] {
+    flex-basis: 70%;
+  }
+  .search_container input[type="submit"] {
+    flex-basis: 20%;
+  }
+}
