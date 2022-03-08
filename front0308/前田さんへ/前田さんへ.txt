@@ -1,6 +1,0 @@
-taxonomy-areaに画像と発火装置追加
-main上部の<div class="header_img_bg mainvisual_wrap"></div>
-
-loading.css削除(index内に入れました)
-
-お願いします。
