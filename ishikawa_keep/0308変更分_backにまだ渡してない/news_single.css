@@ -72,7 +72,7 @@
 .news_page_text_wrap {
     margin-bottom: 30px;
 }
-.news_page_text {
+.s_column_text {
     font-size: 14px;
     text-align: justify;
     line-height: 1.8;
@@ -82,7 +82,7 @@
         margin-bottom: 80px;
         padding: 15px;
     }
-    .news_page_text {
+    .s_column_text {
         font-size: 16px;
     }
 }
