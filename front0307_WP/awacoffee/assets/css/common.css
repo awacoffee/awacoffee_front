@@ -268,9 +268,12 @@ section:nth-of-type(even) {
   .bgc_white {
     background-color: #fff;
   }
-  .cha_col {
+  .header_nav_list.cha_col {
     color: #542912;
   }
+  /* .cha_col {
+    color: #542912;
+  } */
 }
 
 @media (min-width: 768px) {

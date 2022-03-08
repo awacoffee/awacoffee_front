@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="column_list_under">
-<div class="header_img_bg"></div>
+  <div class="header_img_bg mainvisual_wrap"></div>
   <!-- ▼タイトルエリア▼ -->
   <div class="wrap">
     <div class="under_title inner">
@@ -148,7 +148,9 @@
               <li>3</li>
               <li>次へ</li>
             </ul> -->
-            <?php if (function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
+            <?php if (function_exists('wp_pagenavi')) {
+              wp_pagenavi();
+            } ?>
           </div>
 
         </div>
@@ -206,5 +208,5 @@
   </div>
 </main>
 
-        
+
 <?php get_footer(); ?>

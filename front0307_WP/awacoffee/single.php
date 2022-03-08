@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="news_single_under">
-<div class="header_img_bg"></div>
+  <div class="header_img_bg mainvisual_wrap"></div>
   <!-- ▼タイトルエリア▼ -->
   <div class="wrap">
     <div class="under_title inner">
@@ -50,7 +50,7 @@
               <?php previous_post_link('%link', '《 前の記事'); ?>
             </div>
             <div class="news_page_next">
-              <?php next_post_link('%link', '次の記事 》') ; ?>
+              <?php next_post_link('%link', '次の記事 》'); ?>
             </div>
           </nav>
         </div>

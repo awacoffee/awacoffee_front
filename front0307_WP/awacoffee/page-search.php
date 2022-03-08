@@ -2,7 +2,7 @@
 
 
 <main>
-<div class="header_img_bg"></div>
+    <div class="header_img_bg mainvisual_wrap"></div>
     <!-- ▼ページのタイトル▼ -->
     <div class="wrap mainvisual_wrap">
         <div class="under_title inner">
@@ -115,9 +115,9 @@
                     </label>
                 </div>
                 <!-- リセットボタン -->
-            <div class="reset_btn_wrap">
-              <input type="reset" value="リセット" id="reset_btn" />
-            </div>
+                <div class="reset_btn_wrap">
+                    <input type="reset" value="リセット" id="reset_btn" />
+                </div>
             </div>
         </form>
     </div>

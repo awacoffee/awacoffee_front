@@ -1,5 +1,5 @@
 <?php
-if(is_page('contact')){
+if (is_page('contact')) {
   remove_filter('the_content', 'wpautop');
 }
 ?>
@@ -7,7 +7,7 @@ if(is_page('contact')){
 <?php get_header(); ?>
 
 <main>
-<div class="header_img_bg"></div>
+  <div class="header_img_bg mainvisual_wrap"></div>
   <!-- ▼タイトルエリア▼ -->
   <div class="wrap">
     <div class="under_title inner">

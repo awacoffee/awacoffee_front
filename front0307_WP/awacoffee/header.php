@@ -21,7 +21,7 @@
 <body>
     <!-- ▼SP下層ヘッダー▼ -->
     <header>
-        <div class="header_wrap under mainvisual_wrap">
+        <div class="header_wrap under">
             <div class="header_inner">
                 <div class="header_inner_bg">
 
@@ -115,7 +115,7 @@
                             </li>
                         </ul> -->
 
-                          <?php
+                        <?php
                         $args = array(
                             'menu' => 'drower_navigation_top',
                             'menu_class' => 'drower_nav_box',
@@ -123,7 +123,7 @@
                         );
                         wp_nav_menu($args);
                         ?>
-                          <?php
+                        <?php
                         $args = array(
                             'menu' => 'drower_navigation_bottom',
                             'menu_class' => 'drower_nav_list',
@@ -133,10 +133,8 @@
                         ?>
                     </nav>
                     <div class="drower_nav_insta">
-                            <a href="" class="drower_nav_item"
-                                ><i class="fa-brands fa-instagram fa-2x"></i
-                            ></a>
-                        </div>
+                        <a href="" class="drower_nav_item"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

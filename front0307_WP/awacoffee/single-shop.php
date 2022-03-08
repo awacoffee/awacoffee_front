@@ -46,7 +46,7 @@ if (isset($_POST['favoritepageid'])) {
 <?php get_header(); ?>
 
 <main>
-<div class="header_img_bg"></div>
+    <div class="header_img_bg mainvisual_wrap"></div>
     <!-- ▼タイトルエリア▼ -->
     <div class="wrap">
         <div class="under_title inner">
@@ -86,10 +86,7 @@ if (isset($_POST['favoritepageid'])) {
                         echo '</ul>';
                         ?>
                         <div class="store_fun_jump">
-                            <a href="#store_info" class="store_info_btn"><i
-                                            class="fa-solid fa-circle-chevron-down"
-                                        ></i
-                                        >お店の基本情報へ</a>
+                            <a href="#store_info" class="store_info_btn"><i class="fa-solid fa-circle-chevron-down"></i>お店の基本情報へ</a>
                             <div class="store_fun">
                                 <form action="<?php the_permalink(); ?>" method="post" class="form__favorite__btn">
                                     <button class="favorite__btn" type="submit" name="favoritepageid" value="<?php the_ID(); ?>">

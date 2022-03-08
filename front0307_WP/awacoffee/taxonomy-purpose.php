@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="store_list_under">
-<div class="header_img_bg"></div>
+    <div class="header_img_bg mainvisual_wrap"></div>
     <?php
     // 開いているページの情報を取得
     $purpose_slug = get_query_var('purpose');

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="store_list_under">
-<div class="header_img_bg"></div>
+    <div class="header_img_bg mainvisual_wrap"></div>
     <!-- ▼タイトルエリア▼ -->
     <div class="wrap">
         <div class="under_title inner">
