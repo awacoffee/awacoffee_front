@@ -99,7 +99,7 @@ $favoritepagelist = explode(',', $favoritepagelist);
         </div>
         <!-- store_area -->
         <div class="mypage_text">MAP</div>
-        <div class="my_map_box" style=" padding-top:0;">
+        <div class="my_map_box">
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.1690029533397!2d134.57330771521546!3d34.06518168060244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35536d1131fd515b%3A0xb7bb664ec05a9180!2z44Go44KI44Go44G_54-I55Cy!5e0!3m2!1sja!2sjp!4v1645013839914!5m2!1sja!2sjp" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" title="店舗周辺の地図"></iframe> -->
           <div class="acf-map" data-zoom="16">
             <?php
