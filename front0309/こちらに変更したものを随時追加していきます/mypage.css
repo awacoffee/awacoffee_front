@@ -157,14 +157,6 @@
   margin-bottom: 50px;
 }
 
-/* SP版は4:3 */
-.my_map_box {
-  position: relative;
-  /* padding-top: 75%; */
-  padding-top: 0%;
-}
-
-/* fuji */
 .mypage_text::before {
   content: "■";
 }
@@ -178,7 +170,6 @@
     text-align: left;
   }
 }
-/* fuji end */
 
 .my_map_box iframe {
   position: absolute;
@@ -188,12 +179,8 @@
   height: 100%;
   object-fit: cover;
 }
-/* PC版は2:1 */
+
 @media (min-width: 768px) {
-  /* .my_map_box {
-    position: relative;
-    padding-top: 50%;
-  } */
   .my_map_box iframe {
     position: absolute;
     top: 0;
