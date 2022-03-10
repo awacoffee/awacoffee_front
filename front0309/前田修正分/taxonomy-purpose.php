@@ -59,9 +59,9 @@
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </div>
-                            <div class="more_btn">
+                            <!-- <div class="more_btn">
                                 <button>more</button>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="box">
                             <!--SP版の記事表示-->
@@ -89,9 +89,9 @@
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </div>
-                            <div class="sp_more_btn">
-                                <button>more</button>
-                            </div>
+                            <!-- <div class="sp_more_btn">
+                                    <button>more</button>
+                                </div> -->
                         </div>
                         <!-- store_area -->
                     </div>
