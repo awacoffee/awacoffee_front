@@ -58,7 +58,9 @@
     <!-- footer_wrap -->
 </footer>
 
-
+<script>
+    var path = "<?php echo get_template_directory_uri(); ?>";
+</script>
 <?php wp_footer(); ?>
 </body>
 

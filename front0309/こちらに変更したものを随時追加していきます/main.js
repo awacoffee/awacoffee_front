@@ -404,33 +404,32 @@ $(function () {
 // ------------------------------------------------------------------------
 // 条件検索ページ
 // ------------------------------------------------------------------------
-// const map_total_number = 4,
-//   main_map = document.getElementById("main_map"),
-//   click_map = document.getElementById("click_map"),
-//   reset_btn = document.getElementById("reset_btn");
-// main_map.setAttribute("src", "assets/img/map_1.svg");
+const map_total_number = 4,
+  main_map = document.getElementById("main_map"),
+  click_map = document.getElementById("click_map"),
+  reset_btn = document.getElementById("reset_btn");
+main_map.setAttribute("src", path + "/assets/img/map_1.svg");
 
-// for (let i = 0; i < map_total_number; i++) {
-//   const click_map = document.getElementById("map_" + (i + 1));
+for (let i = 0; i < map_total_number; i++) {
+  const click_map = document.getElementById("map_" + (i + 1));
 
-//   click_map.addEventListener("click", () => {
-//     main_map.setAttribute("src", `assets/img/map_${i + 1}.svg`);
-//   });
+  click_map.addEventListener("click", () => {
+    main_map.setAttribute("src", path + `/assets/img/map_${i + 1}.svg`);
+  });
 
-//   console.log(click_map);
-// }
+}
 
-// reset_btn.addEventListener("click", function () {
-//   main_map.setAttribute("src", `assets/img/map_1.svg`);
-// });
+reset_btn.addEventListener("click", function () {
+  main_map.setAttribute("src", path + `/assets/img/map_1.svg`);
+});
 
 //data - imageの動き
-const map = document.querySelectorAll(".s_search_radios");
-map.forEach(function (item, index) {
-  item.onclick = function () {
-    document.getElementById("main_map").src = this.dataset.image;
-  };
-});
+// const map = document.querySelectorAll(".s_search_radios");
+// map.forEach(function (item, index) {
+//   item.onclick = function () {
+//     document.getElementById("main_map").src = this.dataset.image;
+//   };
+// });
 
 // ------------------------------------------------------------------------
 // ニュース一覧ページ
