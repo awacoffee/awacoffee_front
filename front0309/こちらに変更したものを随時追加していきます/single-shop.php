@@ -196,7 +196,7 @@
                         </dl>
 
                         <h2>アクセス</h2>
-                        <div class="store_map" style="padding:0px;">
+                        <div class="store_map">
                             <?php
                             $googlemap = get_field('location'); //get_field()内の値は、2-2.で追加したフィールドの「field_name」
                             // print_r($googlemap);
@@ -211,7 +211,7 @@
                                     height: 450px;
                                     /* position: initial !important; */
                                     border: #ccc solid 1px;
-                                    margin: 20px 0;
+                                    /* margin: 20px 0; */
                                 }
 
                                 .acf-map img {

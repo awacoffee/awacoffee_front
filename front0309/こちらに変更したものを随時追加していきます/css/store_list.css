@@ -4,7 +4,12 @@
 
 /* ======================================================== */
 .inner {
-  padding: 100px 25px 0;
+  padding: 0 20px 40px;
+}
+@media (min-width: 768px) {
+  .inner {
+    padding: 0 25px 100px;
+  }
 }
 .header_img_bg {
   background-image: url(../img/under_store.JPG);
@@ -20,9 +25,9 @@
   font-size: 15px;
   border-left: #7b850b 5px solid;
 }
-.store_area {
+/* .store_area {
   margin-bottom: 50px;
-}
+} */
 @media (min-width: 768px) {
   .area_cate {
     padding: 5px 5px 5px 10px;
@@ -30,4 +35,52 @@
     font-size: 24px;
     border-left: #7b850b 5px solid;
   }
+}
+
+.store_fun_jump {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .store_fun_jump {
+    gap: 60px;
+    max-width: 900px;
+    padding: 60px 40px;
+  }
+}
+.store_info_btn {
+  display: inline-block;
+  padding: 16px;
+  background-color: #041526;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s;
+  box-shadow: 0px 1px 10px 0px rgb(0 0 0 / 35%);
+}
+
+@media (min-width: 768px) {
+  .store_info_btn {
+    padding: 24px;
+  }
+}
+/* .store_info_btn + .store_info_btn {
+  margin-left: 20px;
+} */
+/* @media (min-width: 768px) {
+  .store_info_btn + .store_info_btn {
+    margin-left: 40px;
+  }
+} */
+.fa-circle-chevron-down {
+  margin-right: 5px;
+}
+/* hoverで反転 */
+.store_info_btn:hover {
+  background-color: #fff;
+  color: #041526;
 }
