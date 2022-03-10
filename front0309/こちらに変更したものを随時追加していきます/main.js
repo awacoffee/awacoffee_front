@@ -416,20 +416,11 @@ for (let i = 0; i < map_total_number; i++) {
   click_map.addEventListener("click", () => {
     main_map.setAttribute("src", path + `/assets/img/map_${i + 1}.svg`);
   });
-
 }
 
 reset_btn.addEventListener("click", function () {
   main_map.setAttribute("src", path + `/assets/img/map_1.svg`);
 });
-
-//data - imageの動き
-// const map = document.querySelectorAll(".s_search_radios");
-// map.forEach(function (item, index) {
-//   item.onclick = function () {
-//     document.getElementById("main_map").src = this.dataset.image;
-//   };
-// });
 
 // ------------------------------------------------------------------------
 // ニュース一覧ページ
