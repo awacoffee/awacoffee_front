@@ -446,8 +446,13 @@ section:nth-of-type(even) {
 .drower_nav_insta {
   padding: 1em 3.5em;
   color: #fff;
+  text-align: center;
 }
-
+@media (min-width: 768px) {
+  .footer_nav .drower_nav_insta {
+    text-align: start;
+  }
+}
 /* ======================================================= */
 /* store_card */
 .sp_stores_cards {
