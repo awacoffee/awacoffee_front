@@ -161,7 +161,7 @@ $found_cnt = $wp_query->post_count;
                         </div>
                     </div>
                     <div class="btn_wrap">
-                        <a class="btn_link" href="<?php echo get_permalink(243); ?>"><span><i class="fa-solid fa-magnifying-glass"></i>再検索する</span></a>
+                        <a class="btn_link" href="<?php echo get_permalink(243); ?>"><span>検索条件を変更する</span></a>
                     </div>
                 </div>
             </div>
