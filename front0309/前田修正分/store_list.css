@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* ======================================================== */
+/* 店舗一覧ページCSS */
+
+/* ======================================================== */
+.header_img_bg {
+    background-image: url(../img/under_store.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* h3_見出し（一覧、条件検索で使用） */
+.area_cate {
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    font-family: "Shippori Mincho B1";
+    font-size: 15px;
+    border-left: #7b850b 5px solid;
+}
+.store_area {
+    margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+    .area_cate {
+        padding: 5px 5px 5px 10px;
+        font-family: "Shippori Mincho B1";
+        font-size: 24px;
+        border-left: #7b850b 5px solid;
+    }
+}
+
+.store_fun_jump{
+    margin: 30px;
+    text-align: center;
+}
+
+.store_info_btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #041526;
+    border-radius: 2px;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.35);
+}
+.fa-circle-chevron-down {
+    margin-right: 5px;
+}
+/* hoverで反転 */
+.store_info_btn:hover {
+    background-color: #fff;
+    color: #041526;
+}
