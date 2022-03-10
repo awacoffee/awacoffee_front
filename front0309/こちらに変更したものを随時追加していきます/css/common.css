@@ -467,7 +467,7 @@ section:nth-of-type(even) {
 }
 .sp_stores_cards .stores_card {
     margin-bottom: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     flex-basis: calc((100% - 3%) / 2);
@@ -1158,4 +1158,9 @@ footer {
 .pagination .pagination_1 {
     background-color: #777;
     color: #fff;
+}
+.wp-pagenavi span,
+.wp-pagenavi .larger,
+.wp-pagenavi .nextpostslink {
+    padding: 10px 15px;
 }
